@@ -3,19 +3,18 @@ super_concept: AGENT   # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
 name: Lancaster University
 description: >
-  University with faculty of Social Work.
-
+  Lancaster University is an active research institution in children's social care, with notable contributions
+  from its Centre for Child and Family Justice Research and involvement in national reviews and reform.
 # --- Shared metadata (optional) ---
 tags:
   - academic
   - children_services
+  - social_care
 version: 2025.07
-date_published: 1900-01-01
+date_published: 2026-03-11
 website: https://www.lancaster.ac.uk
 notes: >
-  Lancaster University is an active research institution in children's social care, with notable contributions
-  from its Centre for Child and Family Justice Research and involvement in national reviews and reform.
-
+  University with faculty of Social Work.
 
 
 # --- ORGANIZATION-specific fields ---

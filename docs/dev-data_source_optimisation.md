@@ -4,9 +4,9 @@
 
 ---
 
-## Why this matters for children’s social care data
+## Why this matters for children's social care data
 
-Children’s social care information is **extensive and often spread very wide** across government and partner websites, (long)PDFs, and research portals. Our approach focuses(in-part) on making that material **accessible and searchable** without moving heavy files around or duplicating storage.
+Children's social care information is **extensive and often spread very wide** across government and partner websites, (long)PDFs, and research portals. Our approach focuses(in-part) on making that material **accessible and searchable** without moving heavy files around or duplicating storage.
 
 - **Fast, lightweight search:** we extract text once and create a minimised search index (no PDFs, just raw optimised data)
 - **Clarity and provenance:** chunk-level search surfaces the **exact clauses** (e.g. thresholds, Section 47, kinship care) with links back to the authoritative source and licence

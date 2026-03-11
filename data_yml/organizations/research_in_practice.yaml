@@ -4,7 +4,7 @@ sub_concept:      # optional sub-role
 
 name: Research in Practice (RiP)
 description: >
-  Description, summary text to come
+  Supporting evidence-informed practice with children and families, young people and adults
 
 
 # --- Shared metadata (optional) ---
@@ -13,7 +13,7 @@ tags:
   - data_tools
 version: 2025.07
 date_published: 2026-01-14
-website: https://example.org
+website: https://www.researchinpractice.org.uk/
 notes: >
   Optional notes for further detail, sources or internal use
 
@@ -21,7 +21,7 @@ notes: >
 
 #--- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Academic   # e.g.<e.g. Local Authority, Charity, Academic, Community/Network, Vendor>
+  organisation_type: academic   # e.g.<e.g. Local_Authority, Charity, Academic, Community/Network, Vendor>
   region: England
   projects:
     -                              # must match a known snake_case ID

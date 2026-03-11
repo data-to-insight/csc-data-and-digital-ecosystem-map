@@ -1,13 +1,17 @@
-'@type': TYPE_NAME  # EVENT, SERVICE, PLAN, RELATIONSHIP, COLLECTION, PERSON, RESOURCE, ORGANIZATION
-super_concept:    # SCCM root (AGENT, OBJECT, EVENT, etc.)
+'@type': ORGANIZATION  # EVENT, SERVICE, PLAN, RELATIONSHIP, COLLECTION, PERSON, RESOURCE, ORGANIZATION
+super_concept: AGENT    # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
-name: Template Name Here
+name: DSIT
 description: >
-  Short free text summary or description
+  Ensure that new and existing technologies are safely developed and deployed across the UK 
+  and drive forward a modern digital government for the benefit of its citizens.
+  DSIT is a ministerial department, supported by 13 agencies and public bodies.
+
+
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: local_authority  # e.g. network, research, vendor
+  organisation_type: goverment  # e.g. network, research, vendor
   region: England
   projects:
     -                     # must match a known snake_case ID
@@ -20,8 +24,8 @@ organization_fields:
 
 # --- Shared metadata (optional) ---
 tags:
-  - example_tag        # lowercase, use snake_case if multi-word
-  - data_tools
+  - dsit        # lowercase, use snake_case if multi-word
+  - government
 version: 2025.07
 date_published: 2025-07-21
 website: https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology

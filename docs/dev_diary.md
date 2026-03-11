@@ -10,6 +10,8 @@ This week was also one where i came accross similar work e.g.
 - https://graphcommons.com/graphs/d6b35ab0-90fb-4cef-a00a-3ce711f9f4c4
 and a potential game changer within : https://docs.publishing.service.gov.uk/manual/organisations-api.html
 
+Realised that we still have the issue of node size not reflecting the importance/link levels. But also... cant recall how/where i set this. 
+
 ## 2026-03-04
 
 - back at it. Added some recent new objects/relations from JB

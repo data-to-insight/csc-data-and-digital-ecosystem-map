@@ -6,7 +6,7 @@ description: >
   -
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: 
+  organisation_type: government  # e.g. network, research, vendor
   region: United Kingdom
   projects:
   persons:
@@ -14,12 +14,9 @@ organization_fields:
 # --- Shared metadata (optional) ---
 tags:
   - health
-
 version: 2026.01
 date_published: 2026-01-14
-
 website: https://www.gov.uk/government/organisations/department-of-health-and-social-care
 phone: 
-
 notes: >
   -

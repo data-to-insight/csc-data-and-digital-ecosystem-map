@@ -11,7 +11,7 @@ description: >
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Vendor
+  organisation_type: vendor
   region: United Kingdom
   projects:
   persons:

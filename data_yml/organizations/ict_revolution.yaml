@@ -10,7 +10,7 @@ description: >
   delivery within areas such as children’s services and social care.
 
 organization_fields:
-  organisation_type: Vendor
+  organisation_type: vendor
   region: England
   projects:
   persons:
@@ -24,9 +24,9 @@ tags:
 version: 2025.07
 date_published: 2026-01-14
 
-website: https://www.ictrevolution.co.uk
+website: https://ictrevolutions.com/
 email: info@ictrevolutions.com
-phone: 01691664256
+phone: 01691 664256
 
 notes: >
   ICT Revolution operates as a supplier and delivery partner, providing

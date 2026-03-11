@@ -3,6 +3,8 @@ super_concept: AGENT   # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
 name: Essex CC
 description: >
+  Essex County Council. 
+  Delivers local government services, and statutory provider of all front-line children's social care services.
   Early adopter of the SSD model, involved in the design and practical deployment of the data standard.
 
 # --- Shared metadata (optional) ---

@@ -1,9 +1,10 @@
 '@type': TYPE_NAME  # EVENT, SERVICE, PLAN, RELATIONSHIP, COLLECTION, PERSON, RESOURCE, ORGANIZATION
 super_concept:    # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
-name: Template Name Here
+name: Lewisham Council
 description: >
-  Short free text summary or description
+  Lewisham Borough Council.
+  Delivers local government services, and statutory provider of all front-line children's social care services.
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:

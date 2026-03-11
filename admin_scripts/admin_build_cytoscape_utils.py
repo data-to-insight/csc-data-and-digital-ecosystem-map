@@ -2,7 +2,7 @@
 
 
 """
-Shared helpers for Cytoscape JSON builders, used by both full and lite scripts 
+Shared helpers for Cytoscape JSON builders used by both full and lite scripts 
 """
 
 import json
@@ -24,8 +24,8 @@ def load_yaml(path: Path) -> dict:
         print(f"YAML error in {path}: {e}")
         return {}
 
-# Map node @type to the type specific field block key in YAML
-# Keep ORGANIZATION spelled with Z to match the data model
+# Map node @type to type specific field block key in YAML
+# Keep ORGANIZATION annoyingly spelled with Z to match the data model
 TYPE_TO_BLOCK = {
     "ORGANIZATION": "organization_fields",
     "EVENT":        "event_fields",
@@ -39,9 +39,9 @@ TYPE_TO_BLOCK = {
 
 def extract_type_fields(data: dict, ntype: str) -> dict:
     """
-    Return the type specific fields dictionary from a node YAML.
-    Example, for ntype='EVENT' this returns data['event_fields'] if present.
-    Falls back to {}, never raises if the block is missing or not a dict.
+    Return type specific fields dictionary from node YAML
+    Eg for ntype='EVENT' this returns data['event_fields'] if present
+    Falls back to {} never raises if block missing or not dict
     """
     key = TYPE_TO_BLOCK.get((ntype or "").upper())
     if not key:
@@ -49,7 +49,7 @@ def extract_type_fields(data: dict, ntype: str) -> dict:
     block = data.get(key)
     if isinstance(block, dict):
         return block
-    # if the author used a scalar or list by mistake, preserve it as "_value"
+    # if author used scalar or list by mistake preserve as "_value"
     if block is None:
         return {}
     return {"_value": block}
@@ -57,7 +57,7 @@ def extract_type_fields(data: dict, ntype: str) -> dict:
 # ---------- JSON writing ----------
 
 def _to_json_safe(obj):
-    """Recursively convert objects that json cannot encode by default, for example dates or Paths"""
+    """Recursively convert objects that json cannot encode by default, eg dates or Paths"""
     if isinstance(obj, (date, datetime)):
         return obj.isoformat()
     if isinstance(obj, Decimal):
@@ -75,7 +75,7 @@ def _to_json_safe(obj):
     return obj
 
 def write_json(path: Path, payload, *, minify: bool = True, safe_convert: bool = True) -> None:
-    """Write JSON to path, minified by default, with optional safe conversion for complex types"""
+    """Write JSON to path minified by default, with opt safe conversion for complex types"""
     path.parent.mkdir(parents=True, exist_ok=True)
     obj = _to_json_safe(payload) if safe_convert else payload
     opts = {"ensure_ascii": False}
@@ -128,15 +128,15 @@ def slug_from_path(path: Path, base: Path) -> str:
     return "/".join(segs)
 
 def slug_from_file(file: Path) -> str:
-    """Default simple slug from file name stem."""
+    """Default simple slug from file name stem"""
     return file.stem
 
 def canonical_node_id(data: dict, file: Path) -> str:
-    """Prefer explicit id in YAML, else the file stem."""
+    """Prefer explicit id in YAML, else the file stem"""
     return data.get("id") or file.stem
 
 def update_crosswalk(cw: dict, *, slug: str = None, name: str = None, filestem: str = None, node_id: str = None):
-    """Populate crosswalk with common alternates that may appear in RELs, mapping to canonical node id"""
+    """Populate crosswalk with common alternates that may appear in RELs- mapping to canonical node id"""
     if not node_id:
         return
     if slug:
@@ -148,7 +148,7 @@ def update_crosswalk(cw: dict, *, slug: str = None, name: str = None, filestem: 
         cw[filestem] = node_id
 
 def resolve_id(x, seen_nodes: set, crosswalk: dict):
-    """Resolve a REL endpoint to a canonical node id using seen set and crosswalk, return x if unresolved."""
+    """Resolve REL endpoint to canonical node id using seen set and crosswalk, return x if unresolved"""
     if not x:
         return x
     if x in seen_nodes:
@@ -165,12 +165,12 @@ def resolve_id(x, seen_nodes: set, crosswalk: dict):
 
 def type_class(raw_type: str, category: str) -> str:
     """
-    Map @type or folder category to a concise class string used for styling.
-    We normalise both 'organization' and 'organisation' to 'org' here.
-    This is only for CSS or palette lookup, your YAML @type can stay 'ORGANIZATION' (with Z).
+    Map @type or folder category to concise class string used for styling
+    We normalise both 'organization' and 'organisation' to 'org' here
+    This only for CSS or palette lookup, YAML @type can stay 'ORGANIZATION' (with Z)
     """
     t = (raw_type or category or "other").strip().lower()
-    # normalise UK versus US spelling for organisation, emit 'org' as the style class
+    # normalise UK versus US spelling for organisation, emit 'org' as style class
     # Some uncertainty here about how best to use the SCCM model as such as this an annoyance/unclear currently 
     if t in {"organization", "organisation"}:
         return "org"
@@ -190,14 +190,14 @@ def type_class(raw_type: str, category: str) -> str:
     return mapping.get(t, "default")
 
 def search_blob(label: str, tags, desc: str, *, slug: str = "", raw_type: str = "", limit: int = 500) -> str:
-    """Compact search text blob for client side filtering, trimmed to limit"""
+    """Compact search text blob for client side filtering trimmed to limit"""
     tag_str = " ".join(tags or [])
     parts = [label or "", tag_str, (desc or ""), slug or "", (raw_type or "")]
     base = " ".join(" ".join(p.split()) for p in parts if p is not None).strip().lower()
     return base[:limit]
 
 def position_from_yaml(data: dict):
-    """Optional fixed position from YAML, returns {x, y} or None"""
+    """Optional fixed position from YAML returns {x, y} or None"""
     pos = data.get("position") or {}
     try:
         x = float(pos.get("x")); y = float(pos.get("y"))

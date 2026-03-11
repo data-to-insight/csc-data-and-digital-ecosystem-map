@@ -3,15 +3,14 @@ super_concept: AGENT
 sub_concept:
 name: Action for Children
 description: >
-  Action for Children is a UK charity dedicated to supporting vulnerable
-  children, young people and families. It provides a wide range of services
-  including early help, care leaver support, youth work, family support,
-  foster care, and services for children with additional needs or at risk
-  of harm.
+  Action for Children delivers direct support and preventative services across
+  the UK, often in partnership with statutory agencies, local authorities,
+  health services, and other charities to improve outcomes for children and
+  families.
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Charity
+  organisation_type: charity
   region: United Kingdom
   projects:
   persons:
@@ -30,7 +29,8 @@ version: 2026.01
 date_published: 2026-01-14
 website: https://www.actionforchildren.org.uk/
 notes: >
-  Action for Children delivers direct support and preventative services across
-  the UK, often in partnership with statutory agencies, local authorities,
-  health services, and other charities to improve outcomes for children and
-  families.
+  Action for Children is a UK charity dedicated to supporting vulnerable
+  children, young people and families. It provides a wide range of services
+  including early help, care leaver support, youth work, family support,
+  foster care, and services for children with additional needs or at risk
+  of harm.

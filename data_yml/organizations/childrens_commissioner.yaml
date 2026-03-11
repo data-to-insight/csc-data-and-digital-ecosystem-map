@@ -13,7 +13,7 @@ description: >
 # --- ORGANIZATION-specific fields ---
 
 organization_fields:
-  organisation_type: central_goverment
+  organisation_type: goverment
   region: England
   projects:
   persons:

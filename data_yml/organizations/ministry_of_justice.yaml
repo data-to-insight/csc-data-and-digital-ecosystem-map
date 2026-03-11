@@ -3,14 +3,12 @@ super_concept: AGENT
 sub_concept:
 name: Ministry of Justice
 description: >
-  The Ministry of Justice (MoJ) is a UK government department responsible for the
-  justice system, including courts, prisons, probation services and family
-  justice. It works to protect the public, support victims, and ensure access to
-  justice, including in cases involving children and families.
-
+  The Ministry of Justice oversees the family courts and works with partners
+  including Cafcass, local authorities and other agencies to support decisions
+  that protect children and families.
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: central_government
+  organisation_type: government
   region: United Kingdom
   projects:
   persons:
@@ -18,6 +16,7 @@ organization_fields:
 # --- Shared metadata (optional) ---
 tags:
   - central_government
+  - goverment
   - justice
   - family_justice
   - courts
@@ -29,6 +28,7 @@ date_published: 2026-01-14
 website: https://www.gov.uk/government/organisations/ministry-of-justice
 phone: 0203 334 3555
 notes: >
-  The Ministry of Justice oversees the family courts and works with partners
-  including Cafcass, local authorities and other agencies to support decisions
-  that protect children and families.
+  The Ministry of Justice (MoJ) is a UK government department responsible for the
+  justice system, including courts, prisons, probation services and family
+  justice. It works to protect the public, support victims, and ensure access to
+  justice, including in cases involving children and families.

@@ -14,6 +14,7 @@ tags:
 version: 2025.07
 date_published: 2025-12-02
 website: https://www.socialfinance.org.uk/
+email: info@socialfinance.org.uk
 notes: >
   Optional notes for further detail, sources or internal use
 
@@ -21,7 +22,7 @@ notes: >
 
 #--- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type:    # e.g.<e.g. Local Authority, Charity, Academic, Community/Network, Vendor>
+  organisation_type: nonprofit    # e.g.<e.g. Local Authority, Charity, Academic, Community/Network, Vendor>
   region: England
   projects:
     -                              # must match a known snake_case ID

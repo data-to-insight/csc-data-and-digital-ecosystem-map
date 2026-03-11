@@ -1,8 +1,10 @@
 # admin_scripts/admin-build_cytoscape_json_lite.py
 
 # The lite builder
-# Purpose: produce small payload for fast page loads on GitHub Pages, mobile, and low bandwidth users.
-# Data shape: tiny node objects with short keys [id, l, t, s, sb], edges as [src, tgt, rel], and one separate rich file for side panels. prefers id then file stem, and resolves relationship endpoints via a crosswalk, same as full builder.
+
+# Purpose: produce small payload for fast page loads on GitHub Pages, mobile, and lower bandwidth end-user
+# Data shape: tiny node objects with short keys [id, l, t, s, sb], edges as [src, tgt, rel], and one separate rich file for side panels. 
+# prefers id then file stem and resolves relationship endpoints via crosswalk same as full builder.
 
 # Outputs:
 # docs/data/graph_data.lite.json [just what Cytoscape needs to render]
@@ -33,8 +35,8 @@ def pick_summary(data: dict, limit: int | None = 260) -> str:
     """
     Choose short summary for the details/info panel
 
-    Prefer 'summary', fall back == 'description' -->  'notes'.
-    Normalise whitespace, optional truncate if limit is not None
+    Prefer 'summary', fall back == 'description' -->  'notes'
+    Normalise whitespace opt truncate if limit not None
     """
     for key in ("summary", "description", "notes"):
         val = data.get(key)
@@ -64,7 +66,7 @@ def _to_json_safe(obj):
         return { str(k): _to_json_safe(v) for k, v in obj.items() }
     return obj
 
-# compact join, safe types
+# compact join safe types
 def _coalesce(*vals):
     for v in vals:
         if isinstance(v, str) and v.strip():
@@ -86,7 +88,7 @@ def _search_blob(label, tags, desc, limit=240):
     return base[:limit]
 
 def _position_from_yaml(data: dict):
-    # OPTIONAL: support precomputed positions if present in YAML, e.g.:
+    # OP: support precomputed positions if present in YAML, e.g.:
     # position: { x: 120, y: 480 }
     pos = data.get("position") or {}
     try:
@@ -186,7 +188,7 @@ def _resolve_id(x, seen_nodes, crosswalk):
 def collect_edges(seen_nodes, crosswalk):
     edges = []
     skipped = 0
-    MAX_LOG = 20  # show up to 20 examples
+    MAX_LOG = 20  # <=20 examples
     for file in REL_DIR.glob("*.yaml"):
         if file.name.startswith("0_template"):
             continue

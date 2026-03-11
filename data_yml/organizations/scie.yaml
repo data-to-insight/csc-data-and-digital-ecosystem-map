@@ -4,13 +4,9 @@ sub_concept:
 name: Social Care Institute for Excellence (SCIE)
 
 description: >
-  The Social Care Institute for Excellence (SCIE) is an independent improvement
-  organisation that supports positive change in social care. SCIE collaborates and innovates
-  in social care to improve people’s lives, adults and children, working with a wide range of 
-  partners and people with lived experience.SCIE do this by providing innovative consultancy, 
-  expert training, extensive resources and information and evidence-based insights. 
-  We do this by providing innovative consultancy, expert training, extensive resources and information and evidence-based insights.
-
+  SCIE provides guidance, tools, learning resources, and support to improve
+  social care practice and services. It works closely with government,
+  local authorities, providers, and people with lived experience.
 # --- ORGANIZATION-specific fields ---
 organization_fields:
   organisation_type: independent_charity
@@ -35,6 +31,9 @@ email: info@scie.org.uk
 phone: 0203 8404040
 
 notes: >
-  SCIE provides guidance, tools, learning resources, and support to improve
-  social care practice and services. It works closely with government,
-  local authorities, providers, and people with lived experience.
+  The Social Care Institute for Excellence (SCIE) is an independent improvement
+  organisation that supports positive change in social care. SCIE collaborates and innovates
+  in social care to improve people’s lives, adults and children, working with a wide range of 
+  partners and people with lived experience.SCIE do this by providing innovative consultancy, 
+  expert training, extensive resources and information and evidence-based insights. 
+  We do this by providing innovative consultancy, expert training, extensive resources and information and evidence-based insights.

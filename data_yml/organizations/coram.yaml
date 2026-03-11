@@ -14,7 +14,7 @@ description: >
 
 #--- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Charity  # e.g.<e.g. Local Authority, Charity, Academic, Community/Network, Vendor>
+  organisation_type: charity  # e.g.<e.g. Local Authority, Charity, Academic, Community/Network, Vendor>
   region: England
   projects:
     -                              # must match a known snake_case ID

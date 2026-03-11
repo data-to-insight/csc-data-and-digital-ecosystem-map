@@ -3,11 +3,15 @@ super_concept: AGENT   # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
 name: Knowsley CC
 description: >
+  Knowsley County Council
+  Delivers local government services, and statutory provider of all front-line children's social care services.
   Partner in the Standard Safeguarding Dataset project, contributing to schema development and implementation pilots.
 
 # --- Shared metadata (optional) ---
 tags:
   - local_authority
+  - SSD
+  - standard_safeguarding_dataset
 version: 2025.07
 date_published: 1900-01-01
 website: https://www.knowsley.gov.uk/

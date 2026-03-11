@@ -1,7 +1,7 @@
 '@type': ORGANIZATION
 super_concept: AGENT
 sub_concept:
-name: Barnardo’s
+name: Barnardos
 description: >
   Barnardo’s is one of the UK’s largest children’s charities. It works to support
   children, young people and families, particularly those who are vulnerable or
@@ -11,7 +11,7 @@ description: >
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Charity
+  organisation_type: charity
   region: United Kingdom
   projects:
   persons:

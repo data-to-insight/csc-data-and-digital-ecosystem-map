@@ -11,7 +11,7 @@ description: >
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: Charity
+  organisation_type: charity
   region: United Kingdom
   projects:
   persons:

@@ -3,7 +3,7 @@ super_concept: AGENT   # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
 name: CSCDUG
 description: >
-  Short summary of the entity or activity
+  The Children’s Social Care Data User Group (CSCDUG) was established in early 2018, by and for those who use data about children’s social care to improve services and the welfare of children and families.
 
 
 #--- ORGANIZATION-specific fields ---
@@ -14,10 +14,16 @@ organization_fields:
     -                              # must match a known snake_case ID
   persons:
     - name: Prof. Lisa Holmes
-      role: 
+      role: University of Sussex
       from: 1900-01-01
     - name: Prof. Jenny Woodman
-      role: 
+      role: Thomas Coram Research Unit at UCL Social Research Institute
+      from: 1900-01-01
+    - name: Nikki Luke
+      role: Rees Centre at the University of Oxford
+      from: 1900-01-01
+    - name: Ludivine Garside
+      role: Rees Centre at the University of Oxford
       from: 1900-01-01
 
 
@@ -26,8 +32,9 @@ tags:
   - example_tag        # lowercase, snake_case if multi-word
   - data_tools
 version: 2025.07
-date_published: 2025-07-21
-website: https://example.org
+date_published: 2026-03-11
+website: https://cscdug.co.uk/
+email: CSCDUG@ucl.ac.uk
 notes: >
-  Optional notes for further detail, sources or internal use
+  CSCDUG provides a forum to share expertise and learning between all users and potential users of CSC data (such as the Children in Need and Children Looked After datasets in England) and to provide opportunities for collaboration and joint working between teams, including users of comparable international data.
 

@@ -3,6 +3,7 @@ super_concept: AGENT   # SCCM root (AGENT, OBJECT, EVENT, etc.)
 sub_concept:      # optional sub-role
 name: Hertfordshire CC
 description: >
+  Delivers local government services, and statutory provider of all front-line children's social care services.
   Partner in the Standard Safeguarding Dataset project, contributing to schema development and implementation pilots.
 
 # --- Shared metadata (optional) ---

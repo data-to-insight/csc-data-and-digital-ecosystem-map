@@ -3,16 +3,14 @@ super_concept: AGENT
 sub_concept:
 name: Ofsted
 description: >
-  Ofsted (the Office for Standards in Education, Children’s Services and Skills)
-  is the independent inspectorate and regulator for services that provide
-  education and skills for learners of all ages, and for children’s social care
-  in England. Ofsted inspects and regulates local authority children’s services,
-  schools, and other settings to ensure quality, safety, and effectiveness.
+  Ofsted carries out inspections of local authority children’s services and
+  publishes inspection reports and judgements to support accountability,
+  improvement, and public transparency.
 
 # --- ORGANIZATION-specific fields ---
 
 organization_fields:
-  organisation_type: central_goverment
+  organisation_type: goverment
   region: England
   projects:
   persons:
@@ -35,6 +33,8 @@ email: CIE@ofsted.gov.uk
 phone: 0300 123 4666
 
 notes: >
-  Ofsted carries out inspections of local authority children’s services and
-  publishes inspection reports and judgements to support accountability,
-  improvement, and public transparency.
+  Ofsted (the Office for Standards in Education, Children’s Services and Skills)
+  is the independent inspectorate and regulator for services that provide
+  education and skills for learners of all ages, and for children’s social care
+  in England. Ofsted inspects and regulates local authority children’s services,
+  schools, and other settings to ensure quality, safety, and effectiveness.

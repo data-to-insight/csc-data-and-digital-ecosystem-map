@@ -1,10 +1,11 @@
 # scripts/build_cytoscape_json.py
 
-# full builder
-# Purpose: build complete graph payload for analysis, debugging, richer UI features
+# The full builder
+
+# Purpose: build complete graph payload for analysis, debugging richer UI stuff
 # Data shape: verbose nodes and edges, plus a crosswalk, anything site or tools might need. prefers id then file stem, and it resolves relationship endpoints through the crosswalk.
-# Typical outputs: docs/data/graph_data.json [full], docs/data/crosswalk.json [lookup], other side files wired in main builder.
-# Use: local dev, QA checks, search indexing, data audits, exporting for notebooks, anything where needed all fields and maximum fidelity.
+# Typical outputs: docs/data/graph_data.json [full], docs/data/crosswalk.json [lookup], other side files wired in main builder
+# Use: local dev, QA checks, search indexing, data audits, exporting for notebooks, anything where needed all fields and max detail.
     
 # example output
 # Graph JSON written: /workspaces/csc-map-of-the-world/docs/data/graph_data.json (minified, 149646 bytes)
@@ -93,8 +94,8 @@ def pick_summary(data: dict, limit: int | None = 260) -> str:
     """
     Choose short summary for the details/info panel
 
-    Prefer 'summary', fall back == 'description' -->  'notes'.
-    Normalise whitespace, optional truncate if limit is not None
+    Prefer 'summary', fall back == 'description' -->  'notes'
+    Normalise whitespace, opt truncate if limit is not None
     """
     for key in ("summary", "description", "notes"):
         val = data.get(key)
@@ -116,7 +117,7 @@ def get_entities():
     elements = []
     seen_nodes = set()
 
-    # if you keep a global crosswalk dict elsewhere, do not clear it here
+    # if global crosswalk dict elsewhere dont clear it here
     for category in DATA_DIR.iterdir():
         if not category.is_dir() or category.name == "relationships":
             continue
@@ -159,7 +160,7 @@ def get_entities():
             super_concept  = data.get("super_concept")
             sub_concept    = data.get("sub_concept")
 
-            # NEW, generic type-specific block for info panel
+            # generic type-specific block for info panel
             fields = extract_type_fields(data, ntype)  # e.g. event_fields, plan_fields, etc.
 
             # convenience pull-throughs for legacy UI bits
@@ -202,7 +203,7 @@ def get_entities():
                     "super_concept":  super_concept,
                     "sub_concept":    sub_concept,
 
-                    # expose the type-specific fields in one place for the info panel
+                    # expose type-specific fields in one place for side info panel
                     "fields":        fields,
 
                     # convenience legacy keys, especially for orgs
@@ -211,13 +212,13 @@ def get_entities():
                     "projects":          projects,
                     "persons":           norm_persons,
                 },
-                "classes": cls  # compact style class, e.g. org, event, plan
+                "classes": cls  # compact style class eg. org, event, plan
             }
 
             elements.append(el)
             seen_nodes.add(node_id)
 
-            # keep your existing crosswalk payload if you rely on it elsewhere
+            # keep existing crosswalk payload if rely on it elsewhere (tbc)
             CROSSWALK[slug] = {
                 "id":          node_id,
                 "label":       label,
@@ -258,7 +259,7 @@ def get_relationships(seen_nodes):
                 return x
 
 
-            # try slug lookup from CROSSWALK keys, which are slugs
+            # try slug lookup from CROSSWALK keys which are slugs
 
 
             cw = CROSSWALK.get(x)
@@ -304,7 +305,7 @@ def get_relationships(seen_nodes):
 
 if __name__ == "__main__":
 
-    MINIFY = True # for now, CLI not in use
+    MINIFY = True # for now, as CLI not in use
     # Output format toggle (env only): GRAPH_MINIFY=0 -> pretty; else minified (default)
     # MINIFY = os.getenv("GRAPH_MINIFY", "1") != "0"
 
@@ -313,9 +314,9 @@ if __name__ == "__main__":
     edges = get_relationships(seen_nodes)
 
     if not nodes:
-        raise ValueError("No nodes were generated. Check input YAMLs.")
+        raise ValueError("No nodes were generated. Check input YAMLs")
     if not edges:
-        print("No edges generated. You may see isolated nodes.")
+        print("No edges generated. Potential isolated nodes visible")
 
     graph = {"elements": nodes + edges}
 

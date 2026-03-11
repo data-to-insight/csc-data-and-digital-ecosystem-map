@@ -4,12 +4,9 @@ sub_concept:
 name: Association of Directors of Adult Social Services (ADASS)
 
 description: >
-  The Association of Directors of Adult Social Services (ADASS) is the national
-  leadership association for directors of adult social services and their
-  senior colleagues. ADASS supports professional leadership, policy development,
-  sector-led improvement, and collaboration across adult social care in
-  England and Wales.
-
+  ADASS provides support, guidance, benchmarking, and improvement networks for
+  adult social care leaders. It engages with government, partners in health,
+  and wider social care stakeholders to influence policy and practice.
 # --- ORGANIZATION-specific fields ---
 organization_fields:
   organisation_type: charity
@@ -33,6 +30,8 @@ website: https://www.adass.org.uk/
 email: team@adass.org.uk
 
 notes: >
-  ADASS provides support, guidance, benchmarking, and improvement networks for
-  adult social care leaders. It engages with government, partners in health,
-  and wider social care stakeholders to influence policy and practice.
+  The Association of Directors of Adult Social Services (ADASS) is the national
+  leadership association for directors of adult social services and their
+  senior colleagues. ADASS supports professional leadership, policy development,
+  sector-led improvement, and collaboration across adult social care in
+  England and Wales.

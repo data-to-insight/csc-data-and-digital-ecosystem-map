@@ -10,7 +10,7 @@ description: >
 
 # --- ORGANIZATION-specific fields ---
 organization_fields:
-  organisation_type: system_supplier
+  organisation_type: vendor
   region: United Kingdom
   projects:
   persons:
