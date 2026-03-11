@@ -1,0 +1,19 @@
+'@type': RELATIONSHIP
+
+name: Centre of Excellence supported by Local Government Association
+source: lga
+target: centre_of_excellence
+relationship_type: collaboratesWith
+
+description: >
+  The Local Government Association supports the Centre of Excellence programme
+  through sector-led involvement and engagement with local authorities, helping
+  to shape and enable improvement activity in children’s social care data and
+  digital practice.
+
+tags:
+  - centre_of_excellence
+  - local_government_association
+  - local_government
+  - childrens_services
+  - data_tools

@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: CSCDUG | Centre of Excellence
+source: cscdug
+target: centre_of_excellence
+relationship_type: collaboratesWith
+
+description: >
+  CSCDUG hosts events and discussions supporting development of the Centre
+  of Excellence for data and digital work in children’s social care,
+  providing a forum for sector input and collaboration.
+
+tags:
+  - cscdug
+  - centre_of_excellence
+  - childrens_social_care
+  - data
+  - collaboration

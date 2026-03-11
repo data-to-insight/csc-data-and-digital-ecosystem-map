@@ -1,0 +1,29 @@
+'@type': TYPE_NAME  # EVENT, SERVICE, PLAN, RELATIONSHIP, COLLECTION, PERSON, RESOURCE, ORGANIZATION
+super_concept:    # SCCM root (AGENT, OBJECT, EVENT, etc.)
+sub_concept:      # optional sub-role
+name: Template Name Here
+description: >
+  Short free text summary or description
+
+# --- ORGANIZATION-specific fields ---
+organization_fields:
+  organisation_type: local_authority  # e.g. network, research, vendor
+  region: England
+  projects:
+    -                     # must match a known snake_case ID
+    - 
+  persons:
+    - name: 
+      role: 
+      from: 1900-01-01
+
+
+# --- Shared metadata (optional) ---
+tags:
+  - example_tag        # lowercase, use snake_case if multi-word
+  - data_tools
+version: 2025.07
+date_published: 2026-03-11
+website: https://lewisham.gov.uk/
+notes: >
+  NA

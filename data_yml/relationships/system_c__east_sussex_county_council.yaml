@@ -1,0 +1,15 @@
+'@type': RELATIONSHIP
+name: System C | East Sussex County Council
+source: system_c
+target: east_sussex_county_council
+relationship_type: provides
+description: >
+  System C provides digital social care system solutions used by East Sussex
+  County Council as part of its children’s and adult services technology
+  infrastructure, supporting data integration and case management.
+tags:
+  - system_c
+  - east_sussex_county_council
+  - digital
+  - social_care
+  - technology

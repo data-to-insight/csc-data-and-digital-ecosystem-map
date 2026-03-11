@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: Centre of Excellence supported by Social Finance
+source: social_finance
+target: centre_of_excellence
+relationship_type: collaboratesWith
+
+description: >
+  Social Finance contributes to the Centre of Excellence programme by providing
+  expertise in data, evaluation, and outcomes-focused approaches to support
+  improvement in children’s social care.
+
+tags:
+  - centre_of_excellence
+  - social_finance
+  - childrens_services
+  - data
+  - evaluation

@@ -1,0 +1,19 @@
+'@type': RELATIONSHIP
+name: Dorset Council | IMPOWER
+source: dorset_council
+target: impower
+relationship_type: collaboratesWith
+
+description: >
+  Dorset Council worked with IMPOWER on improvement and transformation activity
+  including work linked to adult social care and SEND, using approaches such as
+  Valuing Home and Valuing SEND to support service improvement and better outcomes.
+
+tags:
+  - dorset_council
+  - impower
+  - local_authority
+  - adult_social_care
+  - send
+  - improvement
+  - transformation

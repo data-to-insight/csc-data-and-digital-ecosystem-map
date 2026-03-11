@@ -1,0 +1,13 @@
+'@type': RELATIONSHIP
+name: Mutual Ventures | Dorset Council
+source: mutual_ventures
+target: dorset_council
+relationship_type: collaboratesWith
+
+description: >
+  Mutual Ventures supported Dorset Council as part of the Families First for
+  Children Pathfinder(FFCP) programme to implement children’s social care reforms.
+tags:
+  - mutual_ventures
+  - dorset_council
+  - ffcp

@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: Children’s Commissioner | Department for Education
+source: childrens_commissioner
+target: department_for_education
+relationship_type: collaboratesWith
+
+description: >
+  The Office of the Children’s Commissioner regularly engages with the
+  Department for Education on policy, practice, consultations and research
+  related to children’s rights, welfare and service improvement across
+  children’s social care and education.
+tags:
+  - childrens_commissioner
+  - department_for_education
+  - policy
+  - advocacy
+  - childrens_services
+  - collaboration

@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: DSIT | Department for Education
+source: dsit
+target: department_for_education
+relationship_type: collaboratesWith
+
+description: >
+  The Department for Science, Innovation and Technology (DSIT) works with
+  the Department for Education (DfE) across government programmes related to
+  research, innovation, and digital transformation, including areas that
+  impact education and public sector data and digital services.
+
+tags:
+  - dsit
+  - dfe
+  - government
+  - digital
+  - innovation

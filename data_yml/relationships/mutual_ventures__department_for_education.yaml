@@ -1,0 +1,16 @@
+'@type': RELATIONSHIP
+name: Mutual Ventures | Department for Education
+source: mutual_ventures
+target: department_for_education
+relationship_type: collaboratesWith
+
+description: >
+  Mutual Ventures acts as a delivery partner for the Department for Education,
+  supporting implementation of the Families First for Children Pathfinder(FFCP)
+  reforms across local authorities.
+
+tags:
+  - mutual_ventures
+  - department_for_education
+  - ffcp
+  - childrens_services

@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: Department for Education | Cafcass
+source: department_for_education 
+target: cafcass
+relationship_type: responsibleFor
+
+description: >
+  Cafcass is a non-departmental public body sponsored by the Department for
+  Education, which provides oversight and funding arrangements while Cafcass
+  operates within the family justice system to represent children in court
+  proceedings.
+
+tags:
+  - cafcass
+  - department_for_education
+  - family_justice
+  - childrens_services
+  - collaboration

@@ -4,12 +4,13 @@ source: department_for_education
 target: ddsf
 relationship_type: provides
 description: >
-  The DfE provided and outlined potential funded project work within Data and Digital Solutions Fund
+  The Data and Digital Solutions Fund (DDSF) was launched and funded by the
+  Department for Education to support local authorities in developing and
+  sharing digital and data solutions for children’s social care.
 tags:
-  - safeguarding
-  - dfe
   - ddsf
-  - ddsf1a
-  - ddsf1b
-  - ddsf2
-  - collaboration
+  - department_for_education
+  - funding
+  - childrens_social_care
+  - data
+  - digital

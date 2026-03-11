@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: MHCLG (The Ministry of Housing, Communities and Local Government) | Data to Insight
+source: mhclg
+target: data_to_insight
+relationship_type: collaboratesWith
+
+description: >
+  The Ministry of Housing, Communities and Local Government (MHCLG) supports and
+  works with Data to Insight on data and digital improvement activity across
+  local government, including work linked to children’s services and the Centre
+  of Excellence. The department was known as the Department for Levelling Up,
+  Housing and Communities (DLUHC)
+
+tags:
+  - mhclg
+  - data_to_insight
+  - local_government
+  - childrens_services
+  - data
+  - digital
+  - support

@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: ImPower | Hertfordshire County Council
+source: impower
+target: hertfordshire_county_council
+relationship_type: collaboratesWith
+description: >
+  ImPower worked with Hertfordshire County Council to improve fostering services,
+  supporting service redesign, performance improvement and staff engagement.
+  The work helped increase foster carer recruitment, strengthen performance
+  management and deliver financial and service improvements.
+tags:
+  - impower
+  - hertfordshire_county_council
+  - fostering
+  - childrens_services
+  - improvement
+  - transformation

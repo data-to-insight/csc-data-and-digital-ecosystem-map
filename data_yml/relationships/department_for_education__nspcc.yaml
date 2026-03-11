@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: NSPCC | Department for Education
+source: department_for_education
+target: nspcc
+relationship_type: collaboratesWith
+
+description: >
+  The NSPCC works closely with the Department for Education, including
+  receiving grant funding and commissioned work to deliver child protection,
+  training, research and support services that align with national policy and
+  safeguarding priorities.
+
+tags:
+  - nspcc
+  - department_for_education
+  - funding
+  - safeguarding
+  - children's_services

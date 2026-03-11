@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: ADASS | Local Government Association
+source: adass
+target: lga
+relationship_type: collaboratesWith
+
+description: >
+  ADASS and the Local Government Association jointly deliver sector support and
+  improvement activity through programmes such as Partners in Care and Health,
+  supporting councils in adult social care and related services.
+
+tags:
+  - adass
+  - local_government_association
+  - partners_in_care_and_health
+  - adult_social_care
+  - local_government
+  - collaboration

@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: Department for Education | Data to Insight
+source: department_for_education
+target: data_to_insight
+relationship_type: collaboratesWith
+
+description: >
+  The Department for Education supports and funds Data to Insight as part of
+  national work to improve children’s social care data, insight and digital
+  practice, including activity linked to the Centre of Excellence.
+
+tags:
+  - department_for_education
+  - data_to_insight
+  - funding
+  - childrens_social_care
+  - data
+  - digital

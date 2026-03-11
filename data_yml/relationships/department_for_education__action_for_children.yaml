@@ -1,0 +1,16 @@
+'@type': RELATIONSHIP
+name: Action for Children | Department for Education
+source: action_for_children
+target: department_for_education
+relationship_type: collaboratesWith
+description: >
+  Action for Children works with and delivers services aligned with Department
+  for Education programmes and policies supporting children, young people and
+  families across England.
+
+tags:
+  - action_for_children
+  - department_for_education
+  - childrens_services
+  - family_support
+  - early_help

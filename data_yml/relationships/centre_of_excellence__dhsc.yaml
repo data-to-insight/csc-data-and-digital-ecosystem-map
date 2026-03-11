@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: Centre of Excellence | DHSC
+source: centre_of_excellence
+target: department_of_health_and_social_care
+relationship_type: collaboratesWith
+
+description: >
+  The Centre of Excellence aligns with the Department of Health and Social
+  Care’s standards programmes and broader cross-government data and digital
+  initiatives related to health and social care improvement.
+tags:
+  - centre_of_excellence
+  - department_of_health_and_social_care
+  - collaboration
+  - data
+  - digital
+  - childrens_services

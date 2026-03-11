@@ -1,0 +1,20 @@
+'@type': RELATIONSHIP
+name: East Sussex County Council collaboration with Integrated Care Boards
+source: east_sussex_county_council
+target: integrated_care_boards
+relationship_type: collaboratesWith
+
+description: >
+  East Sussex County Council works with Integrated Care Boards, including NHS
+  Sussex, as part of the Sussex Integrated Care System to plan, commission and
+  deliver joined-up health and social care services for the local population.
+  ESCC representatives participate in integrated care partnerships and joint
+  strategic planning with the ICB.
+
+tags:
+  - east_sussex_county_council
+  - integrated_care_boards
+  - collaboration
+  - health
+  - social_care
+  - integrated_care_system

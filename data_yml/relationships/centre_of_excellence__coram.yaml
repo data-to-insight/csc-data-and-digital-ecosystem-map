@@ -1,0 +1,15 @@
+'@type': RELATIONSHIP
+
+name: CoE | Coram 
+source: coram
+target: centre_of_excellence
+relationship_type: usesResource
+
+description: >
+  Coram recently joined the Data to Insight (D2I) consortium, which is working
+  with the UK Department for Education (DfE) to develop a Centre of Excellence  
+  focused on data and digital in children’s social care.
+
+tags:
+  - dfe
+  

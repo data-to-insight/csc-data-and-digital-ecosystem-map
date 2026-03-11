@@ -1,0 +1,25 @@
+'@type': ORGANIZATION
+super_concept: AGENT
+sub_concept:
+name: Department of Health and Social Care
+description: >
+  -
+# --- ORGANIZATION-specific fields ---
+organization_fields:
+  organisation_type: 
+  region: United Kingdom
+  projects:
+  persons:
+
+# --- Shared metadata (optional) ---
+tags:
+  - health
+
+version: 2026.01
+date_published: 2026-01-14
+
+website: https://www.gov.uk/government/organisations/department-of-health-and-social-care
+phone: 
+
+notes: >
+  -

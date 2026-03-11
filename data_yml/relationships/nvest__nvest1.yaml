@@ -1,0 +1,10 @@
+'@type': RELATIONSHIP
+
+name: NVEST | NVEST Initial Consulation 
+source: nvest
+target: nvest1
+relationship_type: planForEvent
+description: >
+  Placeholder text
+tags:
+  - nvest

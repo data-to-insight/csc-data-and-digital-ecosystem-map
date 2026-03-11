@@ -1,0 +1,15 @@
+'@type': RELATIONSHIP
+
+name: NVEST co-designed by Data to Insight 
+source: data_to_insight
+target: nvest
+relationship_type: hasPlan
+description: >
+  NVEST is a network for systems managers and social work professionals working to manage, maintain, 
+  procure, and improve CMS and other technologies for social work. 
+  Funded by Data to Insight and governed by a steering group of LA representatives.
+tags:
+  - nvest
+  - data_to_insight
+  - safeguarding
+  - it

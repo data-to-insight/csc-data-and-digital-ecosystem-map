@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: CSCDUG | Data to Insight
+source: cscdug
+target: data_to_insight
+relationship_type: collaboratesWith
+
+description: >
+  The Children’s Social Care Data User Group(CSCDUG) collaborates with 
+  Data to Insight (D2I) to share learning and knowledge about children’s 
+  social care data. D2I regularly contributes to CSCDUG events and webinars,
+  supporting collaboration and improvement across the children’s social care data community.
+tags:
+  - cscdug
+  - data_to_insight
+  - childrens_social_care
+  - data
+  - collaboration

@@ -1,0 +1,13 @@
+'@type': RELATIONSHIP
+name: Mutual Ventures | Lewisham Borough Council
+source: mutual_ventures
+target: lewisham_borough_council
+
+relationship_type: collaboratesWith
+description: >
+  Mutual Ventures supported Lewisham Council as part of the Families First
+  for Children Pathfinder programme to implement reforms in children's services.
+tags:
+  - mutual_ventures
+  - lewisham_council
+  - ffcp

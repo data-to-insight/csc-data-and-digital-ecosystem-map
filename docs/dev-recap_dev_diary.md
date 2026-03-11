@@ -2,6 +2,17 @@
 
 Short notes so others can see journey, also as reminder for me :) - might use this for some later reflective write-up work. 
 
+## 2026-03-11
+
+- Added missing url links into some of JB new org ymls. MAde me wonder about having key roles(DCS) in there not just 'people' - but also how we might reasonably/cheaply obtain this into the meta data. 
+This week was also one where i came accross similar work e.g. 
+- https://ukgov-network-graph.lovable.app/
+- https://graphcommons.com/graphs/d6b35ab0-90fb-4cef-a00a-3ce711f9f4c4
+and a potential game changer within : https://docs.publishing.service.gov.uk/manual/organisations-api.html
+
+## 2026-03-04
+
+- back at it. Added some recent new objects/relations from JB
 
 ---
 

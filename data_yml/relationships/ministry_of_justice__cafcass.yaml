@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: Ministry of Justice | Cafcass
+source: ministry_of_justice
+target: cafcass
+relationship_type: collaboratesWith
+
+description: >
+  The Ministry of Justice works with Cafcass, the Children and Family Court
+  Advisory and Support Service, to support the family justice system in
+  England, where Cafcass advisers represent the interests of children in
+  family court proceedings.
+
+tags:
+  - ministry_of_justice
+  - cafcass
+  - family_justice
+  - collaboration

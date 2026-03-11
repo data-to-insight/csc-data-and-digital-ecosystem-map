@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# admin_scripts/admin-ORCHASTRATOR-rebuild_all_assets.py
+# python ./admin_scripts/admin-ORCHASTRATOR-rebuild_all_assets.py
 
 """
-This is the script to kick-off everything needed when new data is added, refreshed etc. 
+This is a script to kick-off everything needed when new data is added, refreshed etc. 
 Should just run as-is within the codespace. For an overview of what is about to be run
 look below for the block '# Scripts'
 
@@ -18,7 +18,7 @@ Pipeline
   7) Ingest external files(Post local python processing via : csc_motw_corpus_build.ipynb (RH)) from data_externally_processed 
   into docs/data and docs/data/csc_artifacts,  overwrite existing files, report exactly what changed.
 
-External inbox layout, if they exist, we take these from inbox and move them to where they need to be in /docs 
+External inbox layout, if exist we take these from inbox and move them to where they need to be in /docs 
 This is the enabler to ensure they're available for use within the search/graph/network etc
   data_externally_processed/search_index.json      -> docs/data/search_index.json
   data_externally_processed/motw_index.faiss       -> docs/data/csc_artifacts/motw_index.faiss
@@ -225,7 +225,7 @@ def main():
             if f.is_file():
                 print(f"  - {f.name:24} {size_of(f)}")
     else:
-        print("\nDocs artifact folder missing, expected if you have not ingested external files yet.")
+        print("\nDocs artifact folder missing, expected if not ingested external files yet")
 
     if EXT_INBOX.exists():
         print(f"\nExternal inbox present at {EXT_INBOX}")

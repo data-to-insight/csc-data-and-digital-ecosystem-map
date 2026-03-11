@@ -1,0 +1,19 @@
+'@type': RELATIONSHIP
+name: Ofsted | Data to Insight
+source: ofsted
+target: data_to_insight
+relationship_type: collaboratesWith
+
+description: >
+  Ofsted supports and engages with Data to Insight to improve the use of data and
+  insight in children’s social care, helping to strengthen evidence, practice
+  and inspection understanding across the sector.
+
+tags:
+  - ofsted
+  - data_to_insight
+  - childrens_social_care
+  - inspection
+  - data
+  - digital
+  - support

@@ -1,10 +1,13 @@
 '@type': RELATIONSHIP
-name: Excel Tools Maintenance
+name: Placeholder name
 source: data_to_insight
 target: d2i_apprenticeships
 relationship_type: provides
+
 description: >
-  D2I provide ongoing maintenance and hold responsibility for the Excel tool kit
+  Corndel and Data to Insight have partnered to develop a programme that enables 
+  local authorities to build data science capability in Children’s Services teams.
+
 tags:
   - excel
   - maintenance

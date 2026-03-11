@@ -1,0 +1,18 @@
+'@type': RELATIONSHIP
+name: Research in Practice | Ofsted
+source: research_in_practice
+target: ofsted
+relationship_type: collaboratesWith
+
+description: >
+  Research in Practice delivers commissioned research and evidence reviews for
+  Ofsted to support inspection, regulation and understanding of vulnerability
+  and practice across children's and social care services.
+
+tags:
+  - research_in_practice
+  - ofsted
+  - research
+  - inspection
+  - childrens_services
+  - collaboration

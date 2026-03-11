@@ -1,0 +1,19 @@
+'@type': RELATIONSHIP
+name: Department for Education | Family Rights Group
+source: department_for_education
+target: family_rights_group
+relationship_type: collaboratesWith
+
+description: >
+  The Department for Education (DfE) provides grant funding support to Family
+  Rights Group, including funding to sustain FRG’s advice services for families
+  involved with children’s social care and support for programme activity such
+  as Lifelong Links.
+
+tags:
+  - department_for_education
+  - family_rights_group
+  - funding
+  - advice
+  - childrens_social_care
+  - kinship_care

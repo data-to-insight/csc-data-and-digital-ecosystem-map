@@ -1,0 +1,16 @@
+'@type': RELATIONSHIP
+name: Futures | Essex County Council 
+source: futures
+target: essex_county_council
+relationship_type: collaboratesWith
+description: >
+  Futures has worked with Essex County Council to support transformation,
+  digital, and service improvement programmes within local authority services,
+  including children’s and adult social care and wider council operations.
+tags:
+  - futures
+  - essex_county_council
+  - local_government
+  - transformation
+  - digital
+  - social_care

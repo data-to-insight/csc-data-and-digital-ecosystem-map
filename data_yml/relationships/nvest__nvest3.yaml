@@ -1,0 +1,10 @@
+'@type': RELATIONSHIP
+
+name: Organised Event 
+source: nvest
+target: nvest3
+relationship_type: planForEvent
+description: >
+  Placeholder text
+tags:
+  - nvest

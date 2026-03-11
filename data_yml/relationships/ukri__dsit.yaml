@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: UK Research and Innovation | DSIT
+source: department_for_science_innovation_and_technology
+target: ukri
+relationship_type: supportedBy
+
+description: >
+  UK Research and Innovation (UKRI) is a non-departmental public body
+  sponsored by the Department for Science, Innovation and Technology
+  (DSIT), which provides oversight and funding framework arrangements.
+
+tags:
+  - ukri
+  - dsit
+  - government
+  - research
+  - innovation

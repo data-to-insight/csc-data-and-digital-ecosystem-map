@@ -1,0 +1,17 @@
+'@type': RELATIONSHIP
+name: Centre of Excellence | ICT Revolution
+source: ict_revolution
+target: centre_of_excellence
+relationship_type: collaboratesWith
+
+description: >
+  ICT Revolution collaborates with the Centre of Excellence programme,
+  contributing technology and digital expertise to support work in children’s
+  social care.
+
+tags:
+  - centre_of_excellence
+  - ict_revolution
+  - data_tools
+  - childrens_services
+  - digital

@@ -1,0 +1,10 @@
+'@type': RELATIONSHIP
+
+name: Organised Families First CMS challenges
+source: nvest
+target: nvest2
+relationship_type: planForEvent
+description: >
+  Placeholder text
+tags:
+  - nvest
