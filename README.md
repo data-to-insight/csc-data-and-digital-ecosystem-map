@@ -2,9 +2,11 @@
 
 
 
-# CSC Knowledge Base Network
+# CSC Public Data Ecosystem Map (CSC PDEM) & Knowledge Meta Layer
 
-A structured, open-source knowledge base and ecosystem map for the **Children’s Social Care (CSC)** sector. This project brings together [Documentation], [Relationships], [Services], [Sector_Tools], [Rules], [Plans], [Events] using a flexible YAML-based data model and aiming for alignment with the [Smart City Concept Model (SCCM)](http://www.smartcityconceptmodel.com/) towards sector data interoperability.
+A structured, open-source ecosystem map for the **Children’s Social Care (CSC)** sector and searchable knowledge layer. 
+
+This project brings together [Documentation], [Relationships], [Services], [Sector_Tools], [Rules], [Plans], [Events] using a flexible YAML-based data model and aiming for alignment with the [Smart City Concept Model (SCCM)](http://www.smartcityconceptmodel.com/) towards sector data interoperability.
 
 It aims to support full-text search, (filtered)graph-based relations visualisation, and YAML schema validation across structured `.yml` records. Supporting documents (PDF, Markdown, HTML, Python, JS). Development is scaffolded/designed to be extensible, transparent, and Git-native.
 
@@ -41,9 +43,9 @@ We see this as **a collaborative mapping tool**, developed potentially with inpu
 - Graph-based relationship rendering using Cytoscape.js
 - Normalised text extraction via Python based tools, e.g. `nltk`
 - Search index + schema validation scripts
-- SCCM concept alignment across YAML content
+- Open standards alignment across YAML content
 - Local document upload (`/docs/`) for manual additions
-- GitHub integration for syncing external repo docs
+- GitHub integration for syncing external relevant repos/project documentation
 - Modular structure that supports standalone or embedded use
 
 ---
