@@ -1,10 +1,11 @@
-# python admin_scripts/admin-build_cytoscape_json_lite.py
-# python admin_scripts/admin-build_explorer_assets.py
+#!/usr/bin/env python3
+# python ./admin_scripts/admin-build_cytoscape_json_lite.py
+# python ./admin_scripts/admin-build_explorer_assets.py
 
-# Builds an undirected adjacency list adjacency.json, keyed by node id, for instant neighbour lookups without touching Cytoscape, for simple algorithms degree counts and BFS in plain JS
-# Builds key addressable lite map lite_index.json, object keyed by id - faster than scanning array when populating side panels or cross reference positions
-# Builds minimal search array graph_search_index.json, tiny records {id, l, t, s} to enable filters with plain JS, no heavyweight search lib
-# full and lite builders produce graph_data.json, crosswalk.json, graph_data.lite.json, and node_details.json
+# Build an undirected adjacency list adjacency.json, keyed by node id, for instant neighbour lookups without touching Cytoscape, for simple algorithms degree counts and BFS in plain JS
+# Build key addressable lite map lite_index.json, object keyed by id - faster than scanning array when populating side panels or cross reference positions
+# Build minimal search array graph_search_index.json, tiny records {id, l, t, s} to enable filters with plain JS, no heavyweight search lib
+# full and lite builders create graph_data.json, crosswalk.json, graph_data.lite.json, and node_details.json
 
 # writes:
 # docs/data/lite_index.json , id keyed node lookup

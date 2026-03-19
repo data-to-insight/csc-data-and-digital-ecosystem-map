@@ -53,7 +53,7 @@ We see this as **a collaborative mapping tool**, developed potentially with inpu
 *Note: Non-UK spelling dictated by some tools.|modelling standards* 
 
 ```
-/workspaces/d2i-map-of-the-world-mkdocs/
+/workspaces/csc-map-of-the-world-mkdocs/
 
 ├── admin_scripts/                      # Python build glue, turns YAML plus external sources into JSON artifacts for site (graph, search, crosswalk)
 │   …                                   # Individual scripts handle graph_data, lite graph, source_nodes, external corpus indexing

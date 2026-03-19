@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: administrative_court_parent_hm_courts_and_tribunals_service
+slug: administrative_court_parent_hm_courts_and_tribunals_service
+label: Administrative Court has_parent_organisation hm_courts_and_tribunals_service
+description: Administrative Court has parent organisation hm_courts_and_tribunals_service.
+source: administrative_court
+target: hm_courts_and_tribunals_service
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/administrative-court
+  target_org_api_url: https://www.gov.uk/api/organisations/hm-courts-and-tribunals-service
+  target_org_web_url: https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service
+  retrieved_at: '2026-03-11T17:39:59Z'

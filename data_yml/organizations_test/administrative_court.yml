@@ -1,0 +1,30 @@
+'@type': ORGANIZATION
+name: administrative_court
+slug: administrative_court
+label: Administrative Court
+website: https://www.gov.uk/government/organisations/administrative-court
+source: https://www.gov.uk/api/organisations/administrative-court
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:live
+- govuk-format:court
+external_ids:
+  govuk_content_id: b0bdfcf3-2763-4002-961e-a0b2d7825038
+  govuk_analytics_identifier: CO1188
+  govuk_slug: administrative-court
+govuk:
+  title: Administrative Court
+  format: Court
+  updated_at: '2022-12-16T18:54:50Z'
+  logo_formatted_name: Administrative Court
+  organisation_logo_type_class_name: no-identity
+  govuk_status: live
+relationships:
+  parent_organisations:
+  - hm_courts_and_tribunals_service
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/administrative-court
+  retrieved_at: '2026-03-11T17:39:59Z'

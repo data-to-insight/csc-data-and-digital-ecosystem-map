@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: academy_for_social_justice_parent_ministry_of_justice
+slug: academy_for_social_justice_parent_ministry_of_justice
+label: Academy for Social Justice has_parent_organisation ministry_of_justice
+description: Academy for Social Justice has parent organisation ministry_of_justice.
+source: academy_for_social_justice
+target: ministry_of_justice
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/academy-for-social-justice
+  target_org_api_url: https://www.gov.uk/api/organisations/ministry-of-justice
+  target_org_web_url: https://www.gov.uk/government/organisations/ministry-of-justice
+  retrieved_at: '2026-03-11T17:39:59Z'

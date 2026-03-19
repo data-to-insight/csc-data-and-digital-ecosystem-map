@@ -1,4 +1,5 @@
-# scripts/validate_yml_objects.py
+#!/usr/bin/env python3
+# ./admin_scripts/admin-validate_yml_objects.py
 
 # run this periodically, or post new additions. IT will scan the yml folder(s) looking for out of place typos/content/filenames 
 # against the expected yml schema and flag the errors it finds, e.g. filenames with spaces, missing elements within the ymls

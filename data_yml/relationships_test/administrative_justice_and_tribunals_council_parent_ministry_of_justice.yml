@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: administrative_justice_and_tribunals_council_parent_ministry_of_justice
+slug: administrative_justice_and_tribunals_council_parent_ministry_of_justice
+label: Administrative Justice and Tribunals Council has_parent_organisation ministry_of_justice
+description: Administrative Justice and Tribunals Council has parent organisation ministry_of_justice.
+source: administrative_justice_and_tribunals_council
+target: ministry_of_justice
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/administrative-justice-and-tribunals-council
+  target_org_api_url: https://www.gov.uk/api/organisations/ministry-of-justice
+  target_org_web_url: https://www.gov.uk/government/organisations/ministry-of-justice
+  retrieved_at: '2026-03-11T17:39:59Z'

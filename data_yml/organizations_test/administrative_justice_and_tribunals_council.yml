@@ -1,0 +1,35 @@
+'@type': ORGANIZATION
+name: administrative_justice_and_tribunals_council
+slug: administrative_justice_and_tribunals_council
+label: Administrative Justice and Tribunals Council
+aliases:
+- AJTC
+website: https://www.gov.uk/government/organisations/administrative-justice-and-tribunals-council
+source: https://www.gov.uk/api/organisations/administrative-justice-and-tribunals-council
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:closed
+- govuk-format:advisory_non_departmental_public_body
+external_ids:
+  govuk_content_id: 1248e572-5f97-4c70-bba8-b8e2da8b45bf
+  govuk_analytics_identifier: PB436
+  govuk_slug: administrative-justice-and-tribunals-council
+govuk:
+  title: Administrative Justice and Tribunals Council
+  format: Advisory non-departmental public body
+  updated_at: '2021-04-15T09:00:42Z'
+  abbreviation: AJTC
+  logo_formatted_name: Administrative Justice <br/>and Tribunals Council
+  organisation_brand_colour_class_name: ministry-of-justice
+  organisation_logo_type_class_name: no-identity
+  govuk_status: closed
+  govuk_closed_status: no_longer_exists
+relationships:
+  parent_organisations:
+  - ministry_of_justice
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/administrative-justice-and-tribunals-council
+  retrieved_at: '2026-03-11T17:39:59Z'

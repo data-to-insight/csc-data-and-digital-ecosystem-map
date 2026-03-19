@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: advisory_committee_on_clinical_impact_awards_supersedes_advisory_committee_on_clinical_excellence_awards
+slug: advisory_committee_on_clinical_impact_awards_supersedes_advisory_committee_on_clinical_excellence_awards
+label: Advisory Committee on Clinical Impact Awards supersedes_organisation advisory_committee_on_clinical_excellence_awards
+description: Advisory Committee on Clinical Impact Awards supersedes organisation advisory_committee_on_clinical_excellence_awards.
+source: advisory_committee_on_clinical_impact_awards
+target: advisory_committee_on_clinical_excellence_awards
+relationship_type: supersedes_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:supersedes_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/advisory-committee-on-clinical-impact-awards
+  target_org_api_url: https://www.gov.uk/api/organisations/advisory-committee-on-clinical-excellence-awards
+  target_org_web_url: https://www.gov.uk/government/organisations/advisory-committee-on-clinical-excellence-awards
+  retrieved_at: '2026-03-11T17:39:59Z'

@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: accelerated_capability_environment_parent_home_office
+slug: accelerated_capability_environment_parent_home_office
+label: Accelerated Capability Environment has_parent_organisation home_office
+description: Accelerated Capability Environment has parent organisation home_office.
+source: accelerated_capability_environment
+target: home_office
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/accelerated-capability-environment
+  target_org_api_url: https://www.gov.uk/api/organisations/home-office
+  target_org_web_url: https://www.gov.uk/government/organisations/home-office
+  retrieved_at: '2026-03-11T17:39:59Z'

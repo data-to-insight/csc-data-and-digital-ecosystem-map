@@ -1,0 +1,30 @@
+'@type': ORGANIZATION
+name: admiralty_court
+slug: admiralty_court
+label: Admiralty Court
+website: https://www.gov.uk/government/organisations/admiralty-court
+source: https://www.gov.uk/api/organisations/admiralty-court
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:live
+- govuk-format:court
+external_ids:
+  govuk_content_id: 2585bb7b-6134-4176-8309-db184573a4c1
+  govuk_analytics_identifier: CO1147
+  govuk_slug: admiralty-court
+govuk:
+  title: Admiralty Court
+  format: Court
+  updated_at: '2021-04-15T09:04:09Z'
+  logo_formatted_name: Admiralty Court
+  organisation_logo_type_class_name: no-identity
+  govuk_status: live
+relationships:
+  parent_organisations:
+  - hm_courts_and_tribunals_service
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/admiralty-court
+  retrieved_at: '2026-03-11T17:39:59Z'

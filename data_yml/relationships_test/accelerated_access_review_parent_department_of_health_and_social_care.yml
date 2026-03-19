@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: accelerated_access_review_parent_department_of_health_and_social_care
+slug: accelerated_access_review_parent_department_of_health_and_social_care
+label: Accelerated Access Review has_parent_organisation department_of_health_and_social_care
+description: Accelerated Access Review has parent organisation department_of_health_and_social_care.
+source: accelerated_access_review
+target: department_of_health_and_social_care
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/accelerated-access-review
+  target_org_api_url: https://www.gov.uk/api/organisations/department-of-health-and-social-care
+  target_org_web_url: https://www.gov.uk/government/organisations/department-of-health-and-social-care
+  retrieved_at: '2026-03-11T17:39:59Z'

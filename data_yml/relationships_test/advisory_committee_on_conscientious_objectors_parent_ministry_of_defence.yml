@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: advisory_committee_on_conscientious_objectors_parent_ministry_of_defence
+slug: advisory_committee_on_conscientious_objectors_parent_ministry_of_defence
+label: Advisory Committee on Conscientious Objectors has_parent_organisation ministry_of_defence
+description: Advisory Committee on Conscientious Objectors has parent organisation ministry_of_defence.
+source: advisory_committee_on_conscientious_objectors
+target: ministry_of_defence
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/advisory-committee-on-conscientious-objectors
+  target_org_api_url: https://www.gov.uk/api/organisations/ministry-of-defence
+  target_org_web_url: https://www.gov.uk/government/organisations/ministry-of-defence
+  retrieved_at: '2026-03-11T17:39:59Z'

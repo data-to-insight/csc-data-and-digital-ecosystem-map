@@ -3,6 +3,7 @@ mkdocs-material
 pyyaml
 beautifulsoup4
 nltk
+requests
 
 # PDF font extraction
 pillow

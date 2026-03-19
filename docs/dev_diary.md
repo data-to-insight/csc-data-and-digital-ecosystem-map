@@ -2,6 +2,11 @@
 
 Short notes so others can see journey, also as reminder for me :) - might use this for some later reflective write-up work. 
 
+## 2026-03-17
+
+Built a quick poc to pull directly rfom https://docs.publishing.service.gov.uk/manual/organisations-api.html straight into our motw yml format. Works, incl the reltionships but not an obvious way to filter on relevant orgs within that data. Also alot less than expected with just 21 coming through (git repo is at : https://github.com/alphagov/govuk-developer-docs). 
+Also possible use-case for https://github.com/x-govuk/govuk-services-list
+
 ## 2026-03-11
 
 - Added missing url links into some of JB new org ymls. MAde me wonder about having key roles(DCS) in there not just 'people' - but also how we might reasonably/cheaply obtain this into the meta data. 

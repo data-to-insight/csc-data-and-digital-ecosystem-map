@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: advisory_committee_on_business_appointments_parent_cabinet_office
+slug: advisory_committee_on_business_appointments_parent_cabinet_office
+label: Advisory Committee on Business Appointments has_parent_organisation cabinet_office
+description: Advisory Committee on Business Appointments has parent organisation cabinet_office.
+source: advisory_committee_on_business_appointments
+target: cabinet_office
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/advisory-committee-on-business-appointments
+  target_org_api_url: https://www.gov.uk/api/organisations/cabinet-office
+  target_org_web_url: https://www.gov.uk/government/organisations/cabinet-office
+  retrieved_at: '2026-03-11T17:39:59Z'

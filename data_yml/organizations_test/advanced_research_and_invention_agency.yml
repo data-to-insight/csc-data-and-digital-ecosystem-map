@@ -1,0 +1,33 @@
+'@type': ORGANIZATION
+name: advanced_research_and_invention_agency
+slug: advanced_research_and_invention_agency
+label: Advanced Research and Invention Agency
+aliases:
+- ARIA
+website: https://www.gov.uk/government/organisations/advanced-research-and-invention-agency
+source: https://www.gov.uk/api/organisations/advanced-research-and-invention-agency
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:exempt
+- govuk-format:executive_non_departmental_public_body
+external_ids:
+  govuk_content_id: 330bdc96-a584-450e-9536-5932691e5cd7
+  govuk_analytics_identifier: PB1364
+  govuk_slug: advanced-research-and-invention-agency
+govuk:
+  title: Advanced Research and Invention Agency
+  format: Executive non-departmental public body
+  updated_at: '2023-04-19T10:19:40Z'
+  abbreviation: ARIA
+  logo_formatted_name: Advanced Research and Invention Agency
+  organisation_logo_type_class_name: no-identity
+  govuk_status: exempt
+relationships:
+  parent_organisations:
+  - department_for_science_innovation_and_technology
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/advanced-research-and-invention-agency
+  retrieved_at: '2026-03-11T17:39:59Z'
