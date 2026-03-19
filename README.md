@@ -2,7 +2,7 @@
 
 
 
-# CSC Public Data Ecosystem Map (CSC PDEM)
+# CSC Open Data Ecosystem Map (CSC ODEM)
 
 A structured, open-source ecosystem map for the **Children’s Social Care (CSC)** sector and searchable knowledge layer. 
 
