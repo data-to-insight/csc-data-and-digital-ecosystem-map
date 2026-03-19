@@ -19,7 +19,7 @@ Children's social care information is **extensive and often spread very wide** a
 - **Product / content folks:** how we take lots of PDFs and turn them into a **tiny, fast** search index that still finds the right things.
 - **Engineers / data people:** the design choices, math, and scaling numbers so you can **reuse this pipeline** on your own document sets.
 
-**One‑line summary:** we extract text -> split into semantically sensible chunks -> embed each chunk as a vector -> store compactly in Parquet using **uint8 quantisation** -> build a **FAISS** similarity index (HNSW by default). The public search can then use a **small JSON keyword index** for near-instant client‑side search; deeper semantic search uses the vector index as needed.
+**One‑line summary:** we extract text --> split into semantically sensible chunks --> embed each chunk as a vector --> store compactly in Parquet using **uint8 quantisation** --> build a **FAISS** similarity index (HNSW by default). The public search can then use a **small JSON keyword index** for near-instant client‑side search; deeper semantic search uses the vector index as needed.
 
 ---
 
@@ -33,41 +33,41 @@ Children's social care information is **extensive and often spread very wide** a
 
 ---
 
-## What “tiny recall loss” means (plain English)
+## Recall loss
 
-When we save embeddings as **uint8** instead of 32‑bit floats, we’re using a **lossy** compression scheme. That slightly perturbs numbers. If someone later rebuilds a vector index **from those saved numbers**, the nearest‑neighbour results may differ *a bit* from a float32 baseline.
+Saving embeddings as **uint8** instead of 32‑bit floats means we're using **lossy** compression scheme. That slightly perturbs numbers. If someone later rebuilds a vector index **from those saved numbers**, nearest‑neighbour results may differ *a bit* from athe float32 baseline.
 
 In practice with normalised sentence embeddings:
 
-- Cosine similarity between original and dequantised vectors is usually **≥ 0.995** (to around ~0.999)
+- Cosine similarity between orig and dequantised vectors usually **≥ 0.995** (to around ~0.999)
 - End‑to‑end **recall@10** typically changes by **0-2%** on common text corpora
-- Our live FAISS index is built directly from **float32** in memory, so **website retrieval quality is unaffected** by how we store vectors in Parquet
+- MotW live FAISS index is built directly from **float32** in memory, so **website retrieval quality is unaffected** by how we store the vectors in Parquet
 
-### The quick math
+### quick math
 
-L2‑normalise each embedding vector `x` (so values lie roughly in [-1, 1]) and map each component to 8 bits:
+L2‑normalise each embedding vector `x` (vals lie roughly in [-1, 1]) and map each component to 8 bits:
 
-- **Quantise:** `q = round((x + 1) * 127.5)` -> `q ∈ {0,…,255}`  
+- **Quantise:** `q = round((x + 1) * 127.5)` --> `q ∈ {0,…,255}`  
 - **Dequantise:** `x' = (q / 127.5) - 1.0`  
 - **Re‑normalise:** `x'' = x' / ||x'||` (keeps cosine similarity meaningful)
 
-Because most information in sentence embeddings is in **direction** (not exact magnitudes), cosine similarity is very stable after this process.
+Because most info in sentence embeddings is in **direction** (not exact magnitudes), cos similarity very stable after this process.
 
 ---
 
-## The pipeline (what and why)
+## pipeline (what and why)
 
-This a reference for devs and those managing the platform/repo back-end stuff, probably not relevant to most stakeholders. 
+reference for devs and those managing platform/repo back-end stuff, probably not relevant to most stakeholders
 
 1. **Text extraction** (PyMuPDF; pdfminer fallback)  
-   - Why: PyMuPDF is 2-5× faster on many PDFs  
+   - Why: PyMuPDF is 2-5× faster on increasing scale on PDFs  
 2. **Chunking** (default ~1,800 chars with ~150 overlap)  
-   - Why: balances context and index size; fewer, richer chunks -> faster builds and smaller artefacts  
+   - Why: balances context and index size; fewer, richer chunks --> faster build and smaller artefacts  
 3. **Embedding** (`all-MiniLM-L6-v2`, 384‑dim, normalised)  
-   - Why: Small, fast, good quality; normalisation makes cosine = inner product and improves quantisation robustness  
+   - Why: Small fast quality; normalisation makes cosine = inner product and improves quantisation robustness  
 4. **Storage**  
-   - **Per‑doc Parquet** (text + metadata) -> easy incremental updates  
-   - **Vectors in Parquet as `uint8`** -> ~4× smaller than float32, plus schema metadata describing de/quantisation  
+   - **Per‑doc Parquet** (text + metadata) ---> easy incremental updates  
+   - **Vectors in Parquet as `uint8`** ---> ~4× smaller than float32, plus schema metadata describing de/quantisation  
    - **Combined Parquet** (optional) for simple downstream use if LAs have a use for  
 5. **Indexing** (FAISS)  
    - **HNSW** default: excellent recall, easier to tune  
@@ -75,7 +75,7 @@ This a reference for devs and those managing the platform/repo back-end stuff, p
 6. **Incremental builds**  
    - `state.json` records per‑document SHA‑256; unchanged docs are skipped. Rebuilds are proportional to change, not corpus size
 7. **Website search index (keyword JSON)**  
-   - From Parquet, not PDFs. Cleaned text, remove stop‑words and over‑common terms, derive per‑doc keywords -> a **very small** JSON file for client‑side search
+   - From Parquet, not PDFs. Cleaned text, remove stop‑words and over‑common terms, derive per‑doc keywords ---> a **very small** JSON file for client‑side search
 
 ---
 
@@ -83,14 +83,14 @@ This a reference for devs and those managing the platform/repo back-end stuff, p
 
 - **Fast search:** small on‑site JSON makes type‑ahead and filters (appear) near-instant  
 - **Better hits:** chunk‑level indexing can return relevant text blocks from extensive PDFs  
-- **Stable URLs:** Not yet in use. But would be backlinks within the platform to object specific detail(s)  
-- **Scales:** adding thousands of documents has less of impact on site response and repo bloat  
+- **Stable URLs:** Not yet in use. But would be backlinks within the motw platform to object specific detail(s)  
+- **Scales:** adding thousands of docs has less of impact on site response and repo bloat  
 
 ---
 
 ## Real‑world impact for devs/engineers/platform
 
-This a reference for devs and those managing the platform/repo back-end stuff, probably not relevant to most stakeholders. 
+This a reference for devs and those managing  platform/repo back-end stuff, probably not relevant to most stakeholders. 
 
 - **Artefacts, not assets:** Git & Pages store compact Parquet/JSON, not PDFs  
 - **Cheap(er) storage:** vectors as `uint8` and HNSW/IVF‑PQ keep Git/R2 costs low(er)  
@@ -101,7 +101,7 @@ This a reference for devs and those managing the platform/repo back-end stuff, p
 
 ## Sizing & scaling (rules of thumb)
 
-This a reference for devs and those managing the platform/repo back-end stuff, probably not relevant to most stakeholders. 
+This a reference for devs and those managing platform/repo back-end stuff, probably not relevant to most stakeholders. 
 
 Let **C** = number of chunks. With 384‑dim embeddings:
 
@@ -112,7 +112,7 @@ Let **C** = number of chunks. With 384‑dim embeddings:
 
 ### Example projections
 
-Assuming current chunking yields ~**74 chunks/doc** (observed ~1,928 chunks for 26 docs) -> **3,000 docs ~ 222k chunks**  
+Assuming current chunking yields ~**74 chunks/doc** (observed ~1,928 chunks for 26 docs) ---> **3,000 docs ~ 222k chunks**  
 
 | Component | Formula | 222k chunks (est.) |
 |---|---|---:|
@@ -127,7 +127,7 @@ Assuming current chunking yields ~**74 chunks/doc** (observed ~1,928 chunks for 
 
 ## Keyword index (what’s in tiny JSON)
 
-A compact, derived per‑document keyword list from the Parquet text:
+compact derived per‑doc keyword list from the Parquet text:
 
 - Normalise punctuation/quotes and remove boilerplate (e.g., page headers)  
 - Lowercase, keep words of 4+ letters  
@@ -278,14 +278,14 @@ The pipeline can build either:
 
 Stored properties inside the binary:
 
-- `d` -> 384 (embedding dimension)
-- `metric` -> inner product (cosine when vectors are normalised)
-- `ntotal` -> number of vectors (equals total chunks)
+- `d` ---> 384 (embedding dimension)
+- `metric` ---> inner product (cosine when vectors are normalised)
+- `ntotal` ---> number of vectors (equals total chunks)
 - Graph parameters saved with the index:
-  - `M` -> graph degree used at build time (for example 32)
-  - `efConstruction` -> build breadth (for example 80)
+  - `M` ---> graph degree used at build time (for example 32)
+  - `efConstruction` ---> build breadth (for example 80)
 - Query-time parameter you set after loading:
-  - `efSearch` -> search breadth (for example 64 or 128). Higher -> better recall, slower
+  - `efSearch` ---> search breadth (for example 64 or 128). Higher ---> better recall, slower
 
 Notes:
 - Excellent recall and speed up to a few hundred thousand vectors  
@@ -295,16 +295,16 @@ Notes:
 
 Stored properties:
 
-- `d` -> 384
-- `metric` -> inner product
-- `ntotal` -> number of vectors
+- `d` ---> 384
+- `metric` ---> inner product
+- `ntotal` ---> number of vectors
 - Coarse quantiser and codebooks:
-  - `nlist` -> number of coarse centroids (for example 1024)
-  - `m` -> number of subquantisers (for example 16)
-  - `nbits` -> bits per subvector (for example 8)
+  - `nlist` ---> number of coarse centroids (for example 1024)
+  - `m` ---> number of subquantisers (for example 16)
+  - `nbits` ---> bits per subvector (for example 8)
   - Trained centroids and PQ codebooks included in the file
 - Query-time parameter (set after loading):
-  - `nprobe` -> how many coarse lists to search (for example 16, 32, 64). Higher -> better recall, slower.
+  - `nprobe` --> how many coarse lists to search (for example 16, 32, 64). Higher --> better recall, slower.
 
 Notes:
 - Much smaller on disk than HNSW (often tens of MB), with a small recall trade-off - tune via `nprobe`.

@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: academy_for_social_justice_commissioning_superseded_by_academy_for_social_justice
+slug: academy_for_social_justice_commissioning_superseded_by_academy_for_social_justice
+label: Academy for Social Justice Commissioning superseded_by_organisation academy_for_social_justice
+description: Academy for Social Justice Commissioning is superseded by organisation academy_for_social_justice.
+source: academy_for_social_justice_commissioning
+target: academy_for_social_justice
+relationship_type: superseded_by_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:superseded_by_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/academy-for-social-justice-commissioning
+  target_org_api_url: https://www.gov.uk/api/organisations/academy-for-social-justice
+  target_org_web_url: https://www.gov.uk/government/organisations/academy-for-social-justice
+  retrieved_at: '2026-03-11T17:39:59Z'

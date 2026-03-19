@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: advisory_committee_for_social_science_parent_food_standards_agency
+slug: advisory_committee_for_social_science_parent_food_standards_agency
+label: Advisory Committee for Social Science has_parent_organisation food_standards_agency
+description: Advisory Committee for Social Science has parent organisation food_standards_agency.
+source: advisory_committee_for_social_science
+target: food_standards_agency
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/advisory-committee-for-social-science
+  target_org_api_url: https://www.gov.uk/api/organisations/food-standards-agency
+  target_org_web_url: https://www.gov.uk/government/organisations/food-standards-agency
+  retrieved_at: '2026-03-11T17:39:59Z'

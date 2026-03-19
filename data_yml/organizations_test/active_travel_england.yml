@@ -1,0 +1,34 @@
+'@type': ORGANIZATION
+name: active_travel_england
+slug: active_travel_england
+label: Active Travel England
+aliases:
+- ATE
+website: https://www.gov.uk/government/organisations/active-travel-england
+source: https://www.gov.uk/api/organisations/active-travel-england
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:exempt
+- govuk-format:executive_agency
+external_ids:
+  govuk_content_id: c963b443-e0b1-4730-8c7e-526441fcd205
+  govuk_analytics_identifier: EA1350
+  govuk_slug: active-travel-england
+govuk:
+  title: Active Travel England
+  format: Executive agency
+  updated_at: '2024-10-03T12:15:30Z'
+  abbreviation: ATE
+  logo_formatted_name: Active Travel England
+  organisation_brand_colour_class_name: department-for-transport
+  organisation_logo_type_class_name: single-identity
+  govuk_status: exempt
+relationships:
+  parent_organisations:
+  - department_for_transport
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/active-travel-england
+  retrieved_at: '2026-03-11T17:39:59Z'

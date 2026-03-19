@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: active_travel_england_parent_department_for_transport
+slug: active_travel_england_parent_department_for_transport
+label: Active Travel England has_parent_organisation department_for_transport
+description: Active Travel England has parent organisation department_for_transport.
+source: active_travel_england
+target: department_for_transport
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/active-travel-england
+  target_org_api_url: https://www.gov.uk/api/organisations/department-for-transport
+  target_org_web_url: https://www.gov.uk/government/organisations/department-for-transport
+  retrieved_at: '2026-03-11T17:39:59Z'

@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: administration_of_radioactive_substances_advisory_committee_parent_department_of_health_and_social_care
+slug: administration_of_radioactive_substances_advisory_committee_parent_department_of_health_and_social_care
+label: Administration of Radioactive Substances Advisory Committee has_parent_organisation department_of_health_and_social_care
+description: Administration of Radioactive Substances Advisory Committee has parent organisation department_of_health_and_social_care.
+source: administration_of_radioactive_substances_advisory_committee
+target: department_of_health_and_social_care
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/administration-of-radioactive-substances-advisory-committee
+  target_org_api_url: https://www.gov.uk/api/organisations/department-of-health-and-social-care
+  target_org_web_url: https://www.gov.uk/government/organisations/department-of-health-and-social-care
+  retrieved_at: '2026-03-11T17:39:59Z'

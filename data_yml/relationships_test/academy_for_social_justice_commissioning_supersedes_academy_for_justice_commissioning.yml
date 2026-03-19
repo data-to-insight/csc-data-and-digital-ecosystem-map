@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: academy_for_social_justice_commissioning_supersedes_academy_for_justice_commissioning
+slug: academy_for_social_justice_commissioning_supersedes_academy_for_justice_commissioning
+label: Academy for Social Justice Commissioning supersedes_organisation academy_for_justice_commissioning
+description: Academy for Social Justice Commissioning supersedes organisation academy_for_justice_commissioning.
+source: academy_for_social_justice_commissioning
+target: academy_for_justice_commissioning
+relationship_type: supersedes_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:supersedes_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/academy-for-social-justice-commissioning
+  target_org_api_url: https://www.gov.uk/api/organisations/academy-for-justice-commissioning
+  target_org_web_url: https://www.gov.uk/government/organisations/academy-for-justice-commissioning
+  retrieved_at: '2026-03-11T17:39:59Z'

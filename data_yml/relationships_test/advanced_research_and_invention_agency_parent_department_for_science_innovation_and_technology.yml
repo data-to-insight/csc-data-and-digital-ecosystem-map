@@ -1,0 +1,21 @@
+'@type': RELATIONSHIP
+name: advanced_research_and_invention_agency_parent_department_for_science_innovation_and_technology
+slug: advanced_research_and_invention_agency_parent_department_for_science_innovation_and_technology
+label: Advanced Research and Invention Agency has_parent_organisation department_for_science_innovation_and_technology
+description: Advanced Research and Invention Agency has parent organisation department_for_science_innovation_and_technology.
+source: advanced_research_and_invention_agency
+target: department_for_science_innovation_and_technology
+relationship_type: has_parent_organisation
+source_type: ORGANIZATION
+target_type: ORGANIZATION
+tags:
+- govuk
+- uk-government
+- relationship
+- relationship:has_parent_organisation
+provenance:
+  source_system: GOV.UK Organisations API
+  source_org_api_url: https://www.gov.uk/api/organisations/advanced-research-and-invention-agency
+  target_org_api_url: https://www.gov.uk/api/organisations/department-for-science-innovation-and-technology
+  target_org_web_url: https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology
+  retrieved_at: '2026-03-11T17:39:59Z'

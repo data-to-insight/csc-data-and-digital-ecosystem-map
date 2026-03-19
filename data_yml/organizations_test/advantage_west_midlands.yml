@@ -1,0 +1,28 @@
+'@type': ORGANIZATION
+name: advantage_west_midlands
+slug: advantage_west_midlands
+label: Advantage West Midlands
+website: https://www.gov.uk/government/organisations/advantage-west-midlands
+source: https://www.gov.uk/api/organisations/advantage-west-midlands
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:closed
+- govuk-format:executive_agency
+external_ids:
+  govuk_content_id: f66dd076-cee8-4d43-a122-fe087848b10d
+  govuk_analytics_identifier: EA927
+  govuk_slug: advantage-west-midlands
+govuk:
+  title: Advantage West Midlands
+  format: Executive agency
+  updated_at: '2021-04-15T09:03:00Z'
+  logo_formatted_name: Advantage West Midlands
+  organisation_logo_type_class_name: single-identity
+  govuk_status: closed
+  govuk_closed_status: no_longer_exists
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/advantage-west-midlands
+  retrieved_at: '2026-03-11T17:39:59Z'

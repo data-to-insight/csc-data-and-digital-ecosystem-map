@@ -1,0 +1,36 @@
+'@type': ORGANIZATION
+name: advisory_committee_on_clinical_impact_awards
+slug: advisory_committee_on_clinical_impact_awards
+label: Advisory Committee on Clinical Impact Awards
+aliases:
+- ACCIA
+website: https://www.gov.uk/government/organisations/advisory-committee-on-clinical-impact-awards
+source: https://www.gov.uk/api/organisations/advisory-committee-on-clinical-impact-awards
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:live
+- govuk-format:advisory_non_departmental_public_body
+external_ids:
+  govuk_content_id: d3eb23ce-23ad-4d26-88b2-b088c525dbb0
+  govuk_analytics_identifier: PB1354
+  govuk_slug: advisory-committee-on-clinical-impact-awards
+govuk:
+  title: Advisory Committee on Clinical Impact Awards
+  format: Advisory non-departmental public body
+  updated_at: '2024-02-09T13:41:24Z'
+  abbreviation: ACCIA
+  logo_formatted_name: Advisory Committee on Clinical Impact Awards
+  organisation_brand_colour_class_name: department-of-health
+  organisation_logo_type_class_name: no-identity
+  govuk_status: live
+relationships:
+  parent_organisations:
+  - department_of_health_and_social_care
+  superseded_organisations:
+  - advisory_committee_on_clinical_excellence_awards
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/advisory-committee-on-clinical-impact-awards
+  retrieved_at: '2026-03-11T17:39:59Z'

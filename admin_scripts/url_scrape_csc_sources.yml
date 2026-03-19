@@ -1,7 +1,7 @@
 # url_scrape_csc_sources.yml
 # Seed list of source hubs and direct documents to build local content index
 # ------------------------------------------------------------------------------
-# Optional classification taxonomy (independent of SCCM):
+# Optional classification (independent of SCCM):
 # - statutory_guidance     => Often maps to SCCM: RULE
 # - policy_document        => Sometimes SCCM: DOCUMENTATION
 # - inspection_framework   => May loosely relate to EVENT

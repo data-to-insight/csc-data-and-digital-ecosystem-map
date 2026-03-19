@@ -1,0 +1,33 @@
+'@type': ORGANIZATION
+name: academy_for_social_justice
+slug: academy_for_social_justice
+label: Academy for Social Justice
+website: https://www.gov.uk/government/organisations/academy-for-social-justice
+source: https://www.gov.uk/api/organisations/academy-for-social-justice
+tags:
+- govuk
+- uk-government
+- organization
+- govuk-status:live
+- govuk-format:other
+external_ids:
+  govuk_content_id: b854f170-53c8-4098-bf77-e8ef42f93107
+  govuk_analytics_identifier: OT1276
+  govuk_slug: academy-for-social-justice
+govuk:
+  title: Academy for Social Justice
+  format: Other
+  updated_at: '2024-08-29T13:57:07Z'
+  logo_formatted_name: Academy for Social Justice
+  organisation_brand_colour_class_name: ministry-of-justice
+  organisation_logo_type_class_name: single-identity
+  govuk_status: live
+relationships:
+  parent_organisations:
+  - ministry_of_justice
+  superseded_organisations:
+  - academy_for_social_justice_commissioning
+provenance:
+  source_system: GOV.UK Organisations API
+  api_url: https://www.gov.uk/api/organisations/academy-for-social-justice
+  retrieved_at: '2026-03-11T17:39:59Z'
