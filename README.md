@@ -2,7 +2,7 @@
 
 
 
-# CSC Public Data Ecosystem Map (CSC PDEM) & Knowledge Meta Layer
+# CSC Public Data Ecosystem Map (CSC PDEM)
 
 A structured, open-source ecosystem map for the **Children’s Social Care (CSC)** sector and searchable knowledge layer. 
 
