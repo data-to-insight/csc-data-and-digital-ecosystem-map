@@ -1,4 +1,5 @@
-# scripts/build_cytoscape_json.py
+#!/usr/bin/env python3
+# ./admin_scripts/admin-build_cytoscape_json.py
 
 # The full builder
 
@@ -45,8 +46,8 @@ CROSSWALK = {}
 # ---------------- helpers ----------------
 
 def _json_default(o):
-    """help datetime.date or datetime.datetime in graph structure to serialise, in case 
-    any non-str dates in yml org etc files"""
+    """help datetime.date or datetime.datetime in graph structure to serialise
+      in case any non-str dates in yml org etc files"""
     if isinstance(o, (date, datetime)):
         # "2025-12-02" style, JSON friendly
         return o.isoformat()
@@ -56,7 +57,7 @@ def _json_default(o):
 
 # ---------------- helpers ----------------
 def write_json(path: Path, payload, *, minify: bool = True):
-    """Write JSON either minified (default) or pretty, ensure parent dir exist"""
+    """Write JSON either minified (default) or pretty- ensure parent dir exist"""
     opts = {
         "ensure_ascii": False,
         "default": _json_default,
@@ -92,10 +93,10 @@ def as_list(v):
 
 def pick_summary(data: dict, limit: int | None = 260) -> str:
     """
-    Choose short summary for the details/info panel
+    Choose short summary for details/info panel
 
-    Prefer 'summary', fall back == 'description' -->  'notes'
-    Normalise whitespace, opt truncate if limit is not None
+    Prefer 'summary' fall back == 'description' -->  'notes'
+    Normalise whitespace opt truncate if limit not None
     """
     for key in ("summary", "description", "notes"):
         val = data.get(key)

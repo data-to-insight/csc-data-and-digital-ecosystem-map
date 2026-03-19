@@ -1,26 +1,28 @@
 #!/usr/bin/env python3
+# ./admin_scripts/dev-
+
 """
 admin-zip_folder_for_download.py
 
-Zip up a folder for easy offline download/sharing of folders with multiple file contents. 
-This is a stand-alone process. Just run as-is to get the needed zip - some options
-allow specifying the output name, others just take the raw folder name. 
+Zip up folder for download of folders with multiple file contents. 
+This stand-alone process. Run as-is to get needed zip 
+- some options allow specifying output name, others just take raw folder name
 
 Key behaviours:
-- pass an explicit folder path, or a folder name to search for(to zip up)
-- By default, zip is created next to the folder (same parent directory)
-- The zip contains a top level folder, so extracting recreates the folder cleanly
-- Sensible default excludes, plus your own --exclude patterns
-- btw if output zip is placed inside the folder being zipped, it will be skipped
+- pass explicit folder path or folder name to search for(to zip up)
+- By default zip is created next to folder (same parent dir)
+- The zip contains top level folder so extracting recreates folder cleanly
+- def excludes plus on-the-fly --exclude patterns
+- btw if output zip is placed inside the folder being zipped it will be skipped
 
 E.g
-1) Zip an explicit folder path, output next to it
+1) Zip explicit folder path, output next to it
    python3 admin_scripts/admin-zip_folder_for_download.py --path docs/data_yml
 
-2) Find folder by name anywhere under repo root, error if multiple matches
+2) Find folder name anywhere under repo root, error if multiple match
    python3 admin_scripts/admin-zip_folder_for_download.py --name data_yml
 
-3) Find by name under specific root, and set an explicit output path
+3) Find by name under root and set explicit output path
    python3 admin_scripts/admin-zip_folder_for_download.py --name data_yml --search-root /workspaces/csc-map-of-the-world --out /workspaces/csc-map-of-the-world/data_yml_for_download.zip
 
 4) Add excludes

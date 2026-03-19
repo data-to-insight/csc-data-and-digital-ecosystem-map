@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# ./admin_scripts/dev-
+
 import os
 
 # simple dev output on console of repo structure tree for reference

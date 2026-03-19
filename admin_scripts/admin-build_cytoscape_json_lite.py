@@ -1,4 +1,5 @@
-# admin_scripts/admin-build_cytoscape_json_lite.py
+#!/usr/bin/env python3
+# ./admin_scripts/admin-build_cytoscape_json_lite.py
 
 # The lite builder
 

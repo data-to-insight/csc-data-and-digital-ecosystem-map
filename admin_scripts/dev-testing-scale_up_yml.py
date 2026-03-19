@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# admin_scripts/dev-testing-scale_up_yml.py
+# ./admin_scripts/dev-testing-scale_up_yml.py
 
 # Remember: if re-running with revised node numbers, you must have already (re)run the admin_scripts/admin-ORCHASTRATOR-rebuild_all_assets.py
 # as it is this process that updates all the search index and graph definiton files. 
