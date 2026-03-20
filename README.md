@@ -2,11 +2,11 @@
 
 
 
-# CSC Open Data Ecosystem Map (CSC ODEM)
+# CSC Data and Digital Ecosystem Map (CSC DDEM)
 
-A structured, open-source ecosystem map for the **Children’s Social Care (CSC)** sector and searchable knowledge layer. 
+A structured, open-source ecosystem map for the **Children’s Social Care(CSC)** sector combining visualised ecosystem map with searchable meta/knowledge layer with data ingress from both published source documentation and sector knowledge. The combined ecosystem resource aims to provide sector colleagues with a resource for collaboration, shared knowledge around otherwise siloed relevant data project work
 
-This project brings together [Documentation], [Relationships], [Services], [Sector_Tools], [Rules], [Plans], [Events] using a flexible YAML-based data model and aiming for alignment with the [Smart City Concept Model (SCCM)](http://www.smartcityconceptmodel.com/) towards sector data interoperability.
+This project brings together [Documentation], [Relationships], [Services], [Sector_Tools], [Rules], [Plans], [Events] using a flexible YAML-based data model towards sector data interoperability.
 
 It aims to support full-text search, (filtered)graph-based relations visualisation, and YAML schema validation across structured `.yml` records. Supporting documents (PDF, Markdown, HTML, Python, JS). Development is scaffolded/designed to be extensible, transparent, and Git-native.
 

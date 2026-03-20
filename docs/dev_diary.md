@@ -2,6 +2,15 @@
 
 Short notes so others can see journey, also as reminder for me :) - might use this for some later reflective write-up work. 
 
+## 19/03/26
+
+Culmination of complete review and rethink in regards the SCCM standard/model application and how it might be preventing both progress and form a blocker for developing out, particularly in the currently limited 'relationships' definitions that are not a good fit for our onward aims. 
+
+Some minor re-work of content, but also major renaming in line with shift in standards use:
+*CSC Data and Digital Ecosystem Map (CSC DDEM)
+A structured, open-source ecosystem map for the Children’s Social Care(CSC) sector combining visualised ecosystem map with searchable meta/knowledge layer with data ingress from both published source documentation and sector knowledge. The combined ecosystem resource aims to provide sector colleagues with a resource for collaboration, shared knowledge around otherwise siloed relevant data project work*
+
+
 ## 2026-03-17
 
 Built a quick poc to pull directly rfom https://docs.publishing.service.gov.uk/manual/organisations-api.html straight into our motw yml format. Works, incl the reltionships but not an obvious way to filter on relevant orgs within that data. Also alot less than expected with just 21 coming through (git repo is at : https://github.com/alphagov/govuk-developer-docs). 
