@@ -1,0 +1,434 @@
+schema_name: pdem
+schema_version: 0.1.0
+
+'@type': TYPE_NAME  # ORGANISATION, PERSON, TEAM, PROJECT, SERVICE, PROCESS, RULE, EVENT, PLAN, CATALOG, COLLECTION, DATASET, DISTRIBUTION, DATA_SERVICE, SPECIFICATION, GUIDANCE, RESOURCE, PIPELINE, RELATIONSHIP
+
+id: template_name_here
+slug: template_name_here
+
+name: Template Name Here
+description: >
+  Short free text summary or description.
+
+status: active  # active, draft, retired, archived, superseded
+
+
+# --- Optional conceptual alignment blocks ---
+sccm:
+  super_concept:        # prev: super_concept
+  sub_concept:          # prev: sub_concept
+
+savvi_alignment:
+  concept:              # e.g. savvi:LeadOrganisation, savvi:SourceOrganisation, savvi:Plan
+  role:                 # e.g. lead_organisation, source_organisation, delivery_organisation
+  sccm_equivalent:      # e.g. sccm:Organization, sccm:Plan, sccm:Rule
+  subject_scope:
+    -                   # e.g. person, household, residence, area, case
+  notes: >
+    Optional note on how this record aligns to SAVVI in context.
+
+
+# --- Shared identifiers and references ---
+identifiers:
+  - scheme: local_id
+    value: template_name_here
+    preferred: true
+  # - scheme: urn
+  #   value:
+  # - scheme: la_code
+  #   value:
+  # - scheme: gss_code
+  #   value:
+  # - scheme: govuk_slug
+  #   value:
+  # - scheme: govuk_content_id
+  #   value:
+  # - scheme: company_number
+  #   value:
+  # - scheme: charity_number
+  #   value:
+
+labels:
+  preferred:
+  alternative:
+    -
+
+themes:
+  - children_social_care
+
+tags:
+  - example_tag
+  - data_tools
+
+
+# --- Shared links and dates ---
+links:
+  homepage_url: https://example.org          # prev: website
+  source_url:
+  documentation_url:
+  publication_url:
+  download_url:
+  api_url:
+
+dates:
+  created:
+  issued: 2025-07-21                         # prev: date_published
+  modified:
+  valid_from:
+  valid_to:
+
+
+# --- Shared stewardship and provenance ---
+contact_point:
+  name:
+  email:
+  team:
+  url:
+
+provenance:
+  source_system: manual
+  collected_at: 2025-07-21
+  last_verified_at:
+  confidence: medium
+  derived_from:
+    -
+  source_urls:
+    -
+
+standards_map:
+  primary_class:
+  additional_classes:
+    -
+  notes: >
+    Optional internal mapping note.
+
+
+# --- Shared location and coverage, only populate where relevant ---
+location:
+  site_name:
+  address_text:
+  postcode:
+  uprn:
+  usrn:
+  latitude:
+  longitude:
+  crs: WGS84
+  easting:
+  northing:
+  geometry:
+  bounding_box:
+
+spatial_coverage:
+  geography_name:
+  geography_code:
+  geography_type:
+  geometry:
+  bounding_box:
+  theme_uris:
+    -
+
+  administrative_geography:
+    reference_year: 2025
+    source: ONS Open Geography
+
+    lad_code:
+    lad_name:
+    ctyua_code:
+    ctyua_name:
+    region_code:
+    region_name:
+
+    LAD25CD:
+    LAD25NM:
+    CTYUA25CD:
+    CTYUA25NM:
+    RGN25CD:
+    RGN25NM:
+
+
+# --- Shared quality and governance metadata ---
+quality:
+  quality_notes:
+  completeness:
+  validation_status:
+  access_rights:
+  security_classification:
+
+version: 2025.07
+
+notes: >
+  Optional notes for further detail, sources or internal use.
+
+
+# =====================================================================
+# TYPE-SPECIFIC BLOCKS
+# Uncomment only the block relevant to the @type in this file.
+# =====================================================================
+
+
+# --- ORGANISATION ---
+# organisation_fields:                       # prev: organization_fields
+#   organisation_kind: local_authority      # prev: organisation_type
+#   jurisdiction: england
+#   region: south_east
+#   parent_organisation:
+#   projects:
+#     - project_id
+#   persons:
+#     - person_id:
+#       role:
+#       from:
+#   services:
+#     - service_id
+#   datasets:
+#     - dataset_id
+
+
+# --- PERSON ---
+# person_fields:
+#   role:
+#   employer: organisation_id
+#   from:
+#   area_of_focus:
+#   interests:
+#     - item_1
+#     - item_2
+#   affiliations:
+#     - organisation_id
+#     - team_id
+#   contact: person@example.org
+
+
+# --- TEAM ---
+# team_fields:
+#   parent_organisation: organisation_id
+#   members:
+#     - person_id
+#   focus_area:
+#   contact:
+
+
+# --- PROJECT ---
+# project_fields:
+#   lead_organisation: organisation_id
+#   collaborators:
+#     - organisation_id
+#   start_date:
+#   end_date:
+#   status: active
+#   related_services:
+#     - service_id
+#   related_datasets:
+#     - dataset_id
+#   related_specifications:
+#     - specification_id
+
+
+# --- SERVICE ---
+# service_fields:
+#   owning_organisation: organisation_id    # prev: lead_organisation
+#   delivery_partners:
+#     - organisation_id
+#   phase: live
+#   channels:
+#     - online
+#   scope: >
+#     Sample text
+#   related_datasets:
+#     - dataset_id
+#   related_guidance:
+#     - guidance_id
+#   related_specifications:
+#     - specification_id
+#   service_area:
+#     - geography_code
+
+
+# --- PROCESS ---
+# process_fields:
+#   owner: organisation_id
+#   process_kind: operational
+#   linked_service:
+#   linked_bpmn_url:
+#   related_rules:
+#     - rule_id
+
+
+# --- RULE ---
+# rule_fields:
+#   lead_organisation:
+#   collaborators:
+#     - organisation_id
+#   rule_kind: business_rule
+#   linked_specification:
+#   linked_guidance:
+#   linked_decision_model_url:
+
+
+# --- EVENT ---
+# event_fields:
+#   lead_organisation:
+#   collaborators:
+#     - org_or_person_id
+#   location_ref:
+#   event_date: 1900-01-01                  # prev: date
+#   related_services:
+#     - service_id
+#   related_datasets:
+#     - dataset_id
+
+
+# --- PLAN ---
+# plan_fields:
+#   lead_organisation:
+#   status: draft
+#   linked_framework:
+#   target_outcomes:
+#     - outcome_1
+#     - outcome_2
+#   related_projects:
+#     - project_id
+#   related_needs:
+#     - need_id
+
+
+# --- CATALOG ---
+# catalog_fields:
+#   owner: organisation_id
+#   datasets:
+#     - dataset_id
+#   services:
+#     - data_service_id
+#   scope: >
+#     Summary of what this catalog includes.
+
+
+# --- COLLECTION ---
+# collection_fields:
+#   items:
+#     - item_id
+#     - item_id
+#   collection_kind: curated_set
+#   curation_criteria: >
+#     Optional rationale for why these items are grouped.
+#   theme: children_social_care
+
+
+# --- DATASET ---
+# dataset_fields:
+#   publisher: organisation_id
+#   creator:
+#     - organisation_id
+#   access_rights: restricted
+#   security_classification:
+#   licence: OGL-3.0
+#   update_frequency: monthly
+#   temporal_granularity: month
+#   distributions:
+#     - distribution_id
+#   conforms_to:
+#     - specification_id
+#   related_services:
+#     - service_id
+#   related_guidance:
+#     - guidance_id
+#   theme_uris:
+#     - http://id.esd.org.uk/function/...
+#   keywords:
+#     - keyword_1
+#     - keyword_2
+
+
+# --- DISTRIBUTION ---
+# distribution_fields:
+#   dataset: dataset_id
+#   format: CSV
+#   media_type: text/csv
+#   download_url: https://example.org/data.csv
+#   access_service: data_service_id
+#   byte_size:
+#   licence: OGL-3.0
+#   conforms_to:
+#     - specification_id
+
+
+# --- DATA_SERVICE ---
+# data_service_fields:
+#   service_type: api
+#   provider: organisation_id
+#   endpoint_url: https://api.example.org
+#   serves_datasets:
+#     - dataset_id
+#   specification:
+#     - specification_id
+
+
+# --- SPECIFICATION ---
+# specification_fields:
+#   specification_kind: data_model
+#   owner: organisation_id
+#   version: 1.0
+#   lifecycle_status: active
+#   artefact_urls:
+#     - https://example.org/spec
+#   related_datasets:
+#     - dataset_id
+#   related_services:
+#     - service_id
+
+
+# --- GUIDANCE ---
+# guidance_fields:
+#   guidance_kind: policy
+#   owner: organisation_id
+#   applies_to:
+#     - service_id
+#     - dataset_id
+#   publication_url: https://example.org/guidance
+#   supersedes:
+#   superseded_by:
+
+
+# --- RESOURCE ---
+# resource_fields:
+#   resource_kind: report                 # prev: resource_type
+#   format: PDF
+#   language: en
+#   publisher: organisation_id
+#   date_created: 1900-01-01
+#   date_updated: 1900-01-01
+#   licence: open                        # prev: license
+#   access_url: https://example.org/resource.pdf
+#   related_entities:
+#     - organisation_id
+#     - service_id
+#   conforms_to:
+#     - specification_id
+#   note: >
+#     Use DATASET, DISTRIBUTION, GUIDANCE or SPECIFICATION instead of RESOURCE where possible.
+
+
+# --- PIPELINE ---
+# pipeline_fields:
+#   owner: organisation_id
+#   orchestration_platform: github_actions
+#   inputs:
+#     - dataset_id
+#   outputs:
+#     - dataset_id
+#   related_specifications:
+#     - specification_id
+#   related_services:
+#     - service_id
+
+
+# --- RELATIONSHIP ---
+# relationship_fields:
+#   source:
+#   target:
+#   relationship_type: PUBLISHES
+#   evidence_url:
+#   confidence: high
+#   valid_from:
+#   valid_to:
+#   direction: directed

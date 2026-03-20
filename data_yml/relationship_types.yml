@@ -1,0 +1,201 @@
+schema_name: pdem_relationship_types
+schema_version: 0.1.0
+
+relationship_groups:
+
+  structural:
+    - code: HAS_PART
+      label: Has part
+      definition: Source includes the target as a component or subdivision.
+      source_types: [ORGANISATION, TEAM, PROJECT, CATALOG, COLLECTION, PIPELINE]
+      target_types: [ORGANISATION, TEAM, PROJECT, RESOURCE, DATASET, DISTRIBUTION, SERVICE, PIPELINE]
+
+    - code: PART_OF
+      label: Part of
+      definition: Source is a component or subdivision of the target.
+      source_types: [ORGANISATION, TEAM, PROJECT, RESOURCE, DATASET, DISTRIBUTION, SERVICE, PIPELINE]
+      target_types: [ORGANISATION, TEAM, PROJECT, CATALOG, COLLECTION, PIPELINE]
+
+    - code: MEMBER_OF
+      label: Member of
+      definition: Source belongs to a formal or informal organisational grouping.
+      source_types: [PERSON, TEAM, ORGANISATION]
+      target_types: [TEAM, ORGANISATION]
+
+    - code: OWNED_BY
+      label: Owned by
+      definition: Source is owned by the target organisation.
+      source_types: [SERVICE, DATASET, DISTRIBUTION, DATA_SERVICE, SPECIFICATION, RESOURCE, PIPELINE, PROJECT]
+      target_types: [ORGANISATION]
+
+    - code: OPERATED_BY
+      label: Operated by
+      definition: Source is run or operated by the target organisation.
+      source_types: [SERVICE, DATA_SERVICE, PIPELINE, RESOURCE]
+      target_types: [ORGANISATION]
+
+    - code: MAINTAINED_BY
+      label: Maintained by
+      definition: Source is maintained by the target organisation or team.
+      source_types: [DATASET, DATA_SERVICE, SPECIFICATION, GUIDANCE, PIPELINE, RESOURCE]
+      target_types: [ORGANISATION, TEAM]
+
+
+  service_and_delivery:
+    - code: PROVIDES
+      label: Provides
+      definition: Source organisation or team provides the target service, dataset or resource.
+      source_types: [ORGANISATION, TEAM]
+      target_types: [SERVICE, DATASET, RESOURCE, GUIDANCE, DATA_SERVICE]
+
+    - code: SUPPORTS
+      label: Supports
+      definition: Source helps deliver, improve or enable the target.
+      source_types: [SERVICE, GUIDANCE, SPECIFICATION, RESOURCE, PIPELINE, PROJECT]
+      target_types: [SERVICE, DATASET, PROJECT, ORGANISATION, PLAN]
+
+    - code: SERVES
+      label: Serves
+      definition: Source service, dataset or resource serves the needs of the target audience or area.
+      source_types: [SERVICE, DATASET, RESOURCE]
+      target_types: [ORGANISATION, COLLECTION, CATALOG]
+
+    - code: FUNDED_BY
+      label: Funded by
+      definition: Source is funded by the target organisation.
+      source_types: [PROJECT, SERVICE, PIPELINE, RESOURCE]
+      target_types: [ORGANISATION]
+
+    - code: REGULATED_BY
+      label: Regulated by
+      definition: Source is regulated or overseen by the target organisation or rule.
+      source_types: [SERVICE, DATASET, RESOURCE, PROCESS]
+      target_types: [ORGANISATION, RULE]
+
+    - code: COLLABORATES_WITH
+      label: Collaborates with
+      definition: Source collaborates with the target in a shared initiative or activity.
+      source_types: [ORGANISATION, TEAM, PROJECT, PERSON]
+      target_types: [ORGANISATION, TEAM, PROJECT, PERSON]
+
+
+  data_and_catalogue:
+    - code: PUBLISHES
+      label: Publishes
+      definition: Source organisation publishes the target dataset, distribution, guidance or specification.
+      source_types: [ORGANISATION]
+      target_types: [DATASET, DISTRIBUTION, GUIDANCE, SPECIFICATION, RESOURCE]
+
+    - code: HAS_DATASET
+      label: Has dataset
+      definition: Source catalog, collection, service or organisation includes the target dataset.
+      source_types: [CATALOG, COLLECTION, SERVICE, ORGANISATION]
+      target_types: [DATASET]
+
+    - code: HAS_DISTRIBUTION
+      label: Has distribution
+      definition: Source dataset includes the target distribution.
+      source_types: [DATASET]
+      target_types: [DISTRIBUTION]
+
+    - code: EXPOSES_DATA_SERVICE
+      label: Exposes data service
+      definition: Source catalog, organisation or dataset exposes the target data service.
+      source_types: [CATALOG, ORGANISATION, DATASET]
+      target_types: [DATA_SERVICE]
+
+    - code: DOCUMENTED_BY
+      label: Documented by
+      definition: Source is described or documented by the target guidance, specification or resource.
+      source_types: [SERVICE, DATASET, DISTRIBUTION, DATA_SERVICE, PROCESS, RULE, PIPELINE]
+      target_types: [GUIDANCE, SPECIFICATION, RESOURCE]
+
+    - code: CONFORMS_TO
+      label: Conforms to
+      definition: Source conforms to the target specification, standard or rule.
+      source_types: [DATASET, DISTRIBUTION, DATA_SERVICE, PIPELINE, RESOURCE, SERVICE]
+      target_types: [SPECIFICATION, RULE]
+
+
+  lineage_and_transformation:
+    - code: PRODUCES
+      label: Produces
+      definition: Source activity, pipeline or organisation produces the target output.
+      source_types: [PIPELINE, PROCESS, ORGANISATION, PROJECT]
+      target_types: [DATASET, DISTRIBUTION, RESOURCE, EVENT]
+
+    - code: CONSUMES
+      label: Consumes
+      definition: Source uses the target dataset, service, resource or specification as an input.
+      source_types: [PIPELINE, PROCESS, SERVICE, PROJECT, DATA_SERVICE]
+      target_types: [DATASET, DISTRIBUTION, RESOURCE, SPECIFICATION, GUIDANCE]
+
+    - code: TRANSFORMS
+      label: Transforms
+      definition: Source transforms the target or acts on it as part of a process.
+      source_types: [PIPELINE, PROCESS]
+      target_types: [DATASET, DISTRIBUTION, RESOURCE]
+
+    - code: DERIVES_FROM
+      label: Derives from
+      definition: Source is derived from the target source or predecessor.
+      source_types: [DATASET, DISTRIBUTION, RESOURCE, GUIDANCE, SPECIFICATION]
+      target_types: [DATASET, DISTRIBUTION, RESOURCE, GUIDANCE, SPECIFICATION]
+
+    - code: GENERATED_BY
+      label: Generated by
+      definition: Source was generated by the target process, pipeline or event.
+      source_types: [DATASET, DISTRIBUTION, RESOURCE]
+      target_types: [PIPELINE, PROCESS, EVENT]
+
+    - code: USED_BY_ACTIVITY
+      label: Used by activity
+      definition: Source is used by the target activity, process or pipeline.
+      source_types: [DATASET, DISTRIBUTION, RESOURCE]
+      target_types: [PIPELINE, PROCESS, EVENT]
+
+
+  semantic_and_reference:
+    - code: DEFINED_BY
+      label: Defined by
+      definition: Source is semantically or structurally defined by the target specification or rule.
+      source_types: [DATASET, DISTRIBUTION, DATA_SERVICE, RESOURCE, RULE]
+      target_types: [SPECIFICATION, RULE]
+
+    - code: USES_VOCABULARY
+      label: Uses vocabulary
+      definition: Source uses the target controlled vocabulary or code list.
+      source_types: [DATASET, DISTRIBUTION, SPECIFICATION, GUIDANCE, RESOURCE]
+      target_types: [SPECIFICATION, RESOURCE]
+
+    - code: CLASSIFIED_BY
+      label: Classified by
+      definition: Source is classified using the target taxonomy, category or concept scheme.
+      source_types: [DATASET, SERVICE, RESOURCE, GUIDANCE, PROJECT]
+      target_types: [SPECIFICATION, RESOURCE]
+
+    - code: ALIGNED_TO
+      label: Aligned to
+      definition: Source is aligned to the target model, framework, standard or concept scheme.
+      source_types: [DATASET, SERVICE, SPECIFICATION, GUIDANCE, PIPELINE, PROJECT]
+      target_types: [SPECIFICATION, GUIDANCE, RESOURCE]
+
+
+  general:
+    - code: RELATED_TO
+      label: Related to
+      definition: Generic relationship where a more specific type is not yet available.
+      source_types: [ORGANISATION, PERSON, TEAM, PROJECT, SERVICE, PROCESS, RULE, EVENT, PLAN, CATALOG, COLLECTION, DATASET, DISTRIBUTION, DATA_SERVICE, SPECIFICATION, GUIDANCE, RESOURCE, PIPELINE]
+      target_types: [ORGANISATION, PERSON, TEAM, PROJECT, SERVICE, PROCESS, RULE, EVENT, PLAN, CATALOG, COLLECTION, DATASET, DISTRIBUTION, DATA_SERVICE, SPECIFICATION, GUIDANCE, RESOURCE, PIPELINE]
+
+    - code: SUPERSEDES
+      label: Supersedes
+      definition: Source replaces or supersedes the target.
+      source_types: [GUIDANCE, SPECIFICATION, DATASET, DISTRIBUTION, RESOURCE]
+      target_types: [GUIDANCE, SPECIFICATION, DATASET, DISTRIBUTION, RESOURCE]
+
+    - code: INFORMS
+      label: Informs
+      definition: Source contributes information or evidence to the target.
+      source_types: [DATASET, DISTRIBUTION, RESOURCE, GUIDANCE, EVENT]
+      target_types: [PLAN, RULE, PROCESS, PROJECT, SERVICE]
