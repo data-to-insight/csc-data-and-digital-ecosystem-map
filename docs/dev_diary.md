@@ -3,6 +3,13 @@
 Short notes so others can see journey, also as reminder for me :) - might use this for some later reflective write-up work. 
 
 
+## 2026-03-23
+
+Contact back from linkedin contact suggests that there is more data than currently pulled by my quick api organisations attempt. But possible pagination or might be some unpacking issue (I got 21, and see the 10 top level record keys, but should be 1200+ across those):
+https://docs.publishing.service.gov.uk/manual/organisations-api.html
+- need to review and re-test that. 
+
+
 ## 2026-03-20
 
 Post review and agreement from AH with regards pivoting approach on the project's unpinning standards adherence, am definitely moving to a revised approach in terms of the underpinning yml base structure/attributes. atm this impacts the graph visualisation, all supporting data structures feeding those and the codebase that generates this. Info panel generation also. But because i'd not yet transitioned the other data ingress routes into the yml structure, we dont have to contend with this. But initial work is now to scope out how much time/effort needed to make this pivot, likewise whether to create our own bespoke standard to ease overheads - create a best fit instead of adherence. Intend to still provide the mechanisms to record adherence to SCCM - but it's clear that for our needs on this [SCCM](http://www.smartcityconceptmodel.com/) is not a good fit(alone).
