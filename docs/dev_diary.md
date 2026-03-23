@@ -2,7 +2,21 @@
 
 Short notes so others can see journey, also as reminder for me :) - might use this for some later reflective write-up work. 
 
-## 19/03/26
+
+## 2026-03-20
+
+Post review and agreement from AH with regards pivoting approach on the project's unpinning standards adherence, am definitely moving to a revised approach in terms of the underpinning yml base structure/attributes. atm this impacts the graph visualisation, all supporting data structures feeding those and the codebase that generates this. Info panel generation also. But because i'd not yet transitioned the other data ingress routes into the yml structure, we dont have to contend with this. But initial work is now to scope out how much time/effort needed to make this pivot, likewise whether to create our own bespoke standard to ease overheads - create a best fit instead of adherence. Intend to still provide the mechanisms to record adherence to SCCM - but it's clear that for our needs on this [SCCM](http://www.smartcityconceptmodel.com/) is not a good fit(alone).
+
+refs:
+https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles
+https://www.gov.uk/government/publications/data-sharing-governance-framework/data-sharing-governance-framework
+https://www.w3.org/TR/skos-reference/
+https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url
+
+Possible:
+https://coda.io/@savvi/welcome/the-whole-concept-model-277
+
+## 2026-03-19
 
 Culmination of complete review and rethink in regards the SCCM standard/model application and how it might be preventing both progress and form a blocker for developing out, particularly in the currently limited 'relationships' definitions that are not a good fit for our onward aims. 
 
